@@ -101,14 +101,7 @@
 		E145A54F1CCCAC6D00724886 /* HisunLottery */ = {
 			isa = PBXGroup;
 			children = (
-				E145A5531CCCAC6D00724886 /* AppDelegate.h */,
-				E145A5541CCCAC6D00724886 /* AppDelegate.m */,
-				E145A5561CCCAC6D00724886 /* ViewController.h */,
-				E145A5571CCCAC6D00724886 /* ViewController.m */,
-				E145A5591CCCAC6D00724886 /* Main.storyboard */,
-				E145A55C1CCCAC6D00724886 /* Assets.xcassets */,
-				E145A55E1CCCAC6D00724886 /* LaunchScreen.storyboard */,
-				E145A5611CCCAC6D00724886 /* Info.plist */,
+				E17DA6081CCCC3B7006DE486 /* Classes */,
 				E145A5501CCCAC6D00724886 /* Supporting Files */,
 			);
 			path = HisunLottery;
@@ -117,7 +110,10 @@
 		E145A5501CCCAC6D00724886 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E145A5511CCCAC6D00724886 /* main.m */,
+				E145A5591CCCAC6D00724886 /* Main.storyboard */,
+				E145A55C1CCCAC6D00724886 /* Assets.xcassets */,
+				E145A55E1CCCAC6D00724886 /* LaunchScreen.storyboard */,
+				E145A5611CCCAC6D00724886 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +134,82 @@
 				E145A5771CCCAC6E00724886 /* Info.plist */,
 			);
 			path = HisunLotteryUITests;
+			sourceTree = "<group>";
+		};
+		E145A5831CCCAC9800724886 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E145A5841CCCACA000724886 /* Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				E145A5561CCCAC6D00724886 /* ViewController.h */,
+				E145A5571CCCAC6D00724886 /* ViewController.m */,
+			);
+			name = "Controller ";
+			sourceTree = "<group>";
+		};
+		E145A5851CCCACAB00724886 /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				E145A5861CCCACB200724886 /* View */,
+				E145A5831CCCAC9800724886 /* Model */,
+				E145A5841CCCACA000724886 /* Controller  */,
+			);
+			name = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		E145A5861CCCACB200724886 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E17DA6081CCCC3B7006DE486 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E17DA60C1CCCC4E4006DE486 /* Other(分类、第三方框架) */,
+				E17DA60B1CCCC4BA006DE486 /* Award(开奖信息) */,
+				E17DA60A1CCCC4AA006DE486 /* Buy(合买跟单) */,
+				E17DA6091CCCC4A2006DE486 /* Main(主框架) */,
+				E145A5851CCCACAB00724886 /* Hall(购彩大厅) */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E17DA6091CCCC4A2006DE486 /* Main(主框架) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Main(主框架)";
+			sourceTree = "<group>";
+		};
+		E17DA60A1CCCC4AA006DE486 /* Buy(合买跟单) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Buy(合买跟单)";
+			sourceTree = "<group>";
+		};
+		E17DA60B1CCCC4BA006DE486 /* Award(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Award(开奖信息)";
+			sourceTree = "<group>";
+		};
+		E17DA60C1CCCC4E4006DE486 /* Other(分类、第三方框架) */ = {
+			isa = PBXGroup;
+			children = (
+				E145A5511CCCAC6D00724886 /* main.m */,
+				E145A5531CCCAC6D00724886 /* AppDelegate.h */,
+				E145A5541CCCAC6D00724886 /* AppDelegate.m */,
+			);
+			name = "Other(分类、第三方框架)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +279,7 @@
 				TargetAttributes = {
 					E145A54C1CCCAC6D00724886 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MBYQ3L6XSK;
 					};
 					E145A5651CCCAC6E00724886 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -344,6 +417,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang_kn@icloud.com (X89C52XQPT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -387,6 +461,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang_kn@icloud.com (X89C52XQPT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -411,10 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HisunLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hisunpay.www.HisunLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +501,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HisunLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hisunpay.www.HisunLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +579,7 @@
 				E145A57C1CCCAC6E00724886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E145A57D1CCCAC6E00724886 /* Build configuration list for PBXNativeTarget "HisunLotteryTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +588,7 @@
 				E145A57F1CCCAC6E00724886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E145A5801CCCAC6E00724886 /* Build configuration list for PBXNativeTarget "HisunLotteryUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +597,7 @@
 				E145A5821CCCAC6E00724886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

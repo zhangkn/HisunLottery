@@ -18,6 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+#if 0
+/** 此方法生效的前提是statusBar交给VC管理 
+ <key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+ 
+ 此时可以通过AppDelegate 管理状态栏
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+#endif
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
