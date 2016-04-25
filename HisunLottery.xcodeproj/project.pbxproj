@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3881CCDAB6200727AC2 /* HLTabBarViewController.m */; };
+		E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C38C1CCDAB8C00727AC2 /* HLTabBar.m */; };
 		E145A5521CCCAC6D00724886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5511CCCAC6D00724886 /* main.m */; };
 		E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5541CCCAC6D00724886 /* AppDelegate.m */; };
 		E145A5581CCCAC6D00724886 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5571CCCAC6D00724886 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E101C3871CCDAB6200727AC2 /* HLTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTabBarViewController.h; sourceTree = "<group>"; };
+		E101C3881CCDAB6200727AC2 /* HLTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTabBarViewController.m; sourceTree = "<group>"; };
+		E101C38B1CCDAB8C00727AC2 /* HLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTabBar.h; sourceTree = "<group>"; };
+		E101C38C1CCDAB8C00727AC2 /* HLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTabBar.m; sourceTree = "<group>"; };
 		E145A54D1CCCAC6D00724886 /* HisunLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HisunLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145A5511CCCAC6D00724886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E145A5531CCCAC6D00724886 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E101C38A1CCDAB6900727AC2 /* Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				E101C3871CCDAB6200727AC2 /* HLTabBarViewController.h */,
+				E101C3881CCDAB6200727AC2 /* HLTabBarViewController.m */,
+			);
+			name = "Controller ";
+			sourceTree = "<group>";
+		};
+		E101C38E1CCDAB9000727AC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E101C38B1CCDAB8C00727AC2 /* HLTabBar.h */,
+				E101C38C1CCDAB8C00727AC2 /* HLTabBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E145A5441CCCAC6D00724886 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +208,8 @@
 		E17DA6091CCCC4A2006DE486 /* Main(主框架) */ = {
 			isa = PBXGroup;
 			children = (
+				E101C38A1CCDAB6900727AC2 /* Controller  */,
+				E101C38E1CCDAB9000727AC2 /* View */,
 			);
 			name = "Main(主框架)";
 			sourceTree = "<group>";
@@ -344,7 +370,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E145A5581CCCAC6D00724886 /* ViewController.m in Sources */,
+				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,
+				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
