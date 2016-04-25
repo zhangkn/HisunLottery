@@ -8,40 +8,56 @@
 
 #import "HLTabBarViewController.h"
 #import "HLTabBar.h"
+#import "HLTabBarModel.h"
 
-@interface HLTabBarViewController ()
+@interface HLTabBarViewController ()<HLTabBarDelegate>
+
+@property (nonatomic,strong) NSArray *models;
 
 @end
 
 @implementation HLTabBarViewController
 
+- (NSArray *)models{
+    if (nil == _models) {
+        NSMutableArray *tmp = [NSMutableArray array];
+        NSString *imageName;
+        NSString *selectedImageName;
+        for (int i = 0; i<self.viewControllers.count; i++) {
+            imageName = [NSString stringWithFormat:@"TabBar%d",i+1];
+            selectedImageName = [NSString stringWithFormat:@"TabBar%dSel",i+1];
+            //构造模型数组
+            NSDictionary *dict =@{@"imageName":imageName,@"selectedImageName":selectedImageName};
+            HLTabBarModel *model = [HLTabBarModel tabBarModelWithDictionary:dict];
+            [tmp addObject:model];
+        }
+        _models =tmp;
+    }
+    return _models;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //移除系统tabbar
     [self.tabBar removeFromSuperview];
-    HLTabBar *tabBar = [[HLTabBar alloc]initWithFrame:self.tabBar.frame];
-    //定义block，通知导航控制器切换控制器
-    [tabBar setBlock:^(int index){
-        [self setSelectedIndex:index];//切换控制器        
-    }];
-//    [tabBar.block copy];
+    //利用模型创建tabBarButton
+    HLTabBar *tabBar = [HLTabBar tabBarWithModel:self.models view:self.tabBar];
+    //1、 切换控制器方式一：
+//    //定义block，通知导航控制器切换控制器
+//    [tabBar setBlock:^(int index){
+//        [self setSelectedIndex:index];//切换控制器        
+//    }];
+////    [tabBar.block copy];
+    //2.切换控制器方式二：
+    [tabBar setDelegate:self];
     [self.view addSubview:tabBar];
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - HLTabBarDelegate
+- (void) tabBar:(HLTabBar *)tabBar didSelectIndex:(int)index{
+    [self setSelectedIndex:index];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

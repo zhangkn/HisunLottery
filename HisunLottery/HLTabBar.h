@@ -53,11 +53,31 @@
 
 typedef void(^HLTabBarBlock)(int selectIndex);
 
+/*
+ 通知导航控制器的方式二：代理
+ */
+@class HLTabBar;
+@protocol HLTabBarDelegate <NSObject>
+@optional
+- (void)tabBar:(HLTabBar *)tabBar didSelectIndex:(int)index;
+@end
+
 @interface HLTabBar : UIView
 @property (nonatomic,copy) HLTabBarBlock block;//--通知TabBar切换控制器
-
+@property (nonatomic,weak) id<HLTabBarDelegate> delegate;
 
 @property (nonatomic,weak) UIButton *selectedBtn;//记录选中的按钮
+
+
+//自定义视图的现实的数据来源于模型，即使用模型装配自定义视图的显示内容
+@property (nonatomic,strong) NSArray *models;//视图对应的模型，是视图提供给外界的接口
+/**
+ 通过数据模型设置视图内容，可以让视图控制器不需要了解视图的细节
+ view ,用于设置frame
+ 
+ */
++ (instancetype) tabBarWithModel:(NSArray *) models view:(UIView *)view;
+
 
 
 @end
