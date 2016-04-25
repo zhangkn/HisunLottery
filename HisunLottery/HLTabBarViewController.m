@@ -41,10 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //创建自定义tabBar
-    [self setttingTabBar];
-    //设置导航条主题
-    [self setttingAppearance];
-    
+    [self setttingTabBar];    
 
 }
 #pragma mark - 自定义TabBar
@@ -63,30 +60,7 @@
     [tabBar setDelegate:self];
 }
 
-- (void) setttingAppearance{
-    /*
-     @protocol UIAppearance <NSObject>  协议的代理方法+ (instancetype)appearance;
 
-     @interface UIView : UIResponder < UIAppearance>
-     */
-    UINavigationBar *navigationBar =[UINavigationBar appearance];//获取所有导航条外观
-    /**
-     导航栏背景的出图规格
-     iOS6导航栏背景的出图规格
-     非retina：320x44 px
-     retina：640x88 px
-     iOS7导航栏背景的出图规格
-     retina：640x128 px
-     */
-    if (IOS7) {//2016-04-25 15:38:43.112 HisunLottery[4141:217528] 9.2
-        
-        [navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
-
-    }else{
-        [navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
-
-    }
-}
 
 #pragma mark - HLTabBarDelegate
 - (void) tabBar:(HLTabBar *)tabBar didSelectIndex:(int)index{

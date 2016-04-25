@@ -17,13 +17,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
++ (void) setttingAppearance{
+    /*
+     @protocol UIAppearance <NSObject>  协议的代理方法+ (instancetype)appearance;
+     
+     @interface UIView : UIResponder < UIAppearance>
+     */
+    UINavigationBar *navigationBar =[UINavigationBar appearance];//获取所有导航条外观
+    /**
+     导航栏背景的出图规格
+     iOS6导航栏背景的出图规格
+     非retina：320x44 px
+     retina：640x88 px
+     iOS7导航栏背景的出图规格
+     retina：640x128 px
+     */
+    if (IOS7) {//2016-04-25 15:38:43.112 HisunLottery[4141:217528] 9.2
+        
+        [navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+        
+    }else{
+        [navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
+        
+    }
+    
+    /*2.
+     ＊标题：@property(nonatomic,copy) NSDictionary *titleTextAttributes;// 字典中能用到的key在UIStringDrawing.h中// 最新版本的key在UIKit框架的NSAttributedString.h中
+     
+     */
+    //    NSDictionary *dict = @{UITextAttributeTextColor:[UIColor whiteColor]};
+    NSDictionary *dict = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:15]};
+    [navigationBar setTitleTextAttributes:dict];
+    
+    
 }
+
+
 
 #pragma mark - 重写pushViewController: animated:
 /**
@@ -36,14 +67,23 @@
     [super pushViewController:viewController animated:animated];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - 设置一次性属性
+/**
+ 1、ninitailize、load方法的区别：
+ initailize、load都是类方法
+ 当一个类被装载进内存时，就会调用一次load方法（当时这个类还不可用）
+ 当第一次使用这个类,或者这个类的子类的时候，就会调用一次initailize方法
+ 2.+ (void)initialize
+ Initializes the class before it receives its first message.
+ */
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
++ (void)initialize{
+    if (self == [HLNavigationController class]) {//保证只调用一次
+        // ... do the initialization ...
+        //设置导航条主题
+        [self setttingAppearance];
+
+    }
 }
-*/
 
 @end

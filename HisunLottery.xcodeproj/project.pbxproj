@@ -13,6 +13,7 @@
 		E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3941CCDEBA900727AC2 /* HLButton.m */; };
 		E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3991CCDEF1000727AC2 /* HLHallViewController.m */; };
 		E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C39C1CCDF7E700727AC2 /* HLNavigationController.m */; };
+		E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3A01CCE19C900727AC2 /* HLTitleButton.m */; };
 		E145A5521CCCAC6D00724886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5511CCCAC6D00724886 /* main.m */; };
 		E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5541CCCAC6D00724886 /* AppDelegate.m */; };
 		E145A55B1CCCAC6D00724886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145A5591CCCAC6D00724886 /* Main.storyboard */; };
@@ -53,6 +54,8 @@
 		E101C39B1CCDF7E700727AC2 /* HLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLNavigationController.h; sourceTree = "<group>"; };
 		E101C39C1CCDF7E700727AC2 /* HLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLNavigationController.m; sourceTree = "<group>"; };
 		E101C39E1CCE04B200727AC2 /* HisunLottery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HisunLottery-Prefix.pch"; sourceTree = "<group>"; };
+		E101C39F1CCE19C900727AC2 /* HLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTitleButton.h; sourceTree = "<group>"; };
+		E101C3A01CCE19C900727AC2 /* HLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTitleButton.m; sourceTree = "<group>"; };
 		E145A54D1CCCAC6D00724886 /* HisunLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HisunLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145A5511CCCAC6D00724886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E145A5531CCCAC6D00724886 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,15 @@
 			children = (
 			);
 			name = "Setting(我的彩票)";
+			sourceTree = "<group>";
+		};
+		E101C3A21CCE19D100727AC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E101C39F1CCE19C900727AC2 /* HLTitleButton.h */,
+				E101C3A01CCE19C900727AC2 /* HLTitleButton.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		E145A5441CCCAC6D00724886 = {
@@ -257,6 +269,7 @@
 		E17DA60A1CCCC4AA006DE486 /* Buy(合买跟单) */ = {
 			isa = PBXGroup;
 			children = (
+				E101C3A21CCE19D100727AC2 /* View */,
 			);
 			name = "Buy(合买跟单)";
 			sourceTree = "<group>";
@@ -416,6 +429,7 @@
 				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,
 				E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */,
+				E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */,
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,
 			);

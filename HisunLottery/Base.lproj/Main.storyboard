@@ -168,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="-754" y="-1320"/>
         </scene>
-        <!--View Controller-->
+        <!--幸运广场-->
         <scene sceneID="609-lj-kj0">
             <objects>
                 <viewController id="oXH-Q1-bEc" sceneMemberID="viewController">
@@ -181,14 +181,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.16455309870000001" blue="0.46689447340000001" alpha="0.62" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="C9V-Ef-omr"/>
+                    <navigationItem key="navigationItem" title="幸运广场" id="C9V-Ef-omr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Us-cw-96R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-390" y="362"/>
         </scene>
-        <!--View Controller-->
+        <!--我的彩票-->
         <scene sceneID="Rn6-3g-TJf">
             <objects>
                 <viewController id="MDQ-L4-vnE" sceneMemberID="viewController">
@@ -201,14 +201,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.83621128030000003" green="1" blue="0.96531162280000005" alpha="0.22" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hXt-4Y-DaC"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="hXt-4Y-DaC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmo-4h-gE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-390" y="948"/>
         </scene>
-        <!--View Controller-->
+        <!--开奖信息-->
         <scene sceneID="37z-zq-0Wi">
             <objects>
                 <viewController id="t6h-po-p1d" sceneMemberID="viewController">
@@ -221,7 +221,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.25569275029999999" green="0.31005662550000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="C0U-Yw-rCR"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="C0U-Yw-rCR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15d-9e-QyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -241,7 +241,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.16862745579999999" green="0.96862751250000001" blue="0.180392161" alpha="0.54000000000000004" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ifw-oT-Onu"/>
+                    <navigationItem key="navigationItem" id="ifw-oT-Onu">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="efv-N0-NYi" customClass="HLTitleButton">
+                            <rect key="frame" x="116" y="11" width="88" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="全部彩种" image="YellowDownArrow"/>
+                        </button>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9J-8d-HUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -250,6 +257,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
 </document>
