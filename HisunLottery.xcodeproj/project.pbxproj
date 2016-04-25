@@ -10,9 +10,11 @@
 		E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3881CCDAB6200727AC2 /* HLTabBarViewController.m */; };
 		E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C38C1CCDAB8C00727AC2 /* HLTabBar.m */; };
 		E101C3921CCDD56500727AC2 /* HLTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3911CCDD56500727AC2 /* HLTabBarModel.m */; };
+		E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3941CCDEBA900727AC2 /* HLButton.m */; };
+		E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3991CCDEF1000727AC2 /* HLHallViewController.m */; };
+		E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C39C1CCDF7E700727AC2 /* HLNavigationController.m */; };
 		E145A5521CCCAC6D00724886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5511CCCAC6D00724886 /* main.m */; };
 		E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5541CCCAC6D00724886 /* AppDelegate.m */; };
-		E145A5581CCCAC6D00724886 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5571CCCAC6D00724886 /* ViewController.m */; };
 		E145A55B1CCCAC6D00724886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145A5591CCCAC6D00724886 /* Main.storyboard */; };
 		E145A55D1CCCAC6D00724886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E145A55C1CCCAC6D00724886 /* Assets.xcassets */; };
 		E145A5601CCCAC6D00724886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145A55E1CCCAC6D00724886 /* LaunchScreen.storyboard */; };
@@ -44,12 +46,17 @@
 		E101C38C1CCDAB8C00727AC2 /* HLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTabBar.m; sourceTree = "<group>"; };
 		E101C3901CCDD56500727AC2 /* HLTabBarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTabBarModel.h; sourceTree = "<group>"; };
 		E101C3911CCDD56500727AC2 /* HLTabBarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTabBarModel.m; sourceTree = "<group>"; };
+		E101C3931CCDEBA900727AC2 /* HLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLButton.h; sourceTree = "<group>"; };
+		E101C3941CCDEBA900727AC2 /* HLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLButton.m; sourceTree = "<group>"; };
+		E101C3981CCDEF1000727AC2 /* HLHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHallViewController.h; sourceTree = "<group>"; };
+		E101C3991CCDEF1000727AC2 /* HLHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLHallViewController.m; sourceTree = "<group>"; };
+		E101C39B1CCDF7E700727AC2 /* HLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLNavigationController.h; sourceTree = "<group>"; };
+		E101C39C1CCDF7E700727AC2 /* HLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLNavigationController.m; sourceTree = "<group>"; };
+		E101C39E1CCE04B200727AC2 /* HisunLottery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HisunLottery-Prefix.pch"; sourceTree = "<group>"; };
 		E145A54D1CCCAC6D00724886 /* HisunLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HisunLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145A5511CCCAC6D00724886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E145A5531CCCAC6D00724886 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E145A5541CCCAC6D00724886 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E145A5561CCCAC6D00724886 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E145A5571CCCAC6D00724886 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E145A55A1CCCAC6D00724886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E145A55C1CCCAC6D00724886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E145A55F1CCCAC6D00724886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +99,8 @@
 			children = (
 				E101C3871CCDAB6200727AC2 /* HLTabBarViewController.h */,
 				E101C3881CCDAB6200727AC2 /* HLTabBarViewController.m */,
+				E101C39B1CCDF7E700727AC2 /* HLNavigationController.h */,
+				E101C39C1CCDF7E700727AC2 /* HLNavigationController.m */,
 			);
 			name = "Controller ";
 			sourceTree = "<group>";
@@ -100,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				E101C38B1CCDAB8C00727AC2 /* HLTabBar.h */,
+				E101C3931CCDEBA900727AC2 /* HLButton.h */,
+				E101C3941CCDEBA900727AC2 /* HLButton.m */,
 				E101C38C1CCDAB8C00727AC2 /* HLTabBar.m */,
 			);
 			name = View;
@@ -112,6 +123,20 @@
 				E101C3911CCDD56500727AC2 /* HLTabBarModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E101C3961CCDED4400727AC2 /* Luck(幸运广场) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Luck(幸运广场)";
+			sourceTree = "<group>";
+		};
+		E101C3971CCDED7800727AC2 /* Setting(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Setting(我的彩票)";
 			sourceTree = "<group>";
 		};
 		E145A5441CCCAC6D00724886 = {
@@ -182,8 +207,8 @@
 		E145A5841CCCACA000724886 /* Controller  */ = {
 			isa = PBXGroup;
 			children = (
-				E145A5561CCCAC6D00724886 /* ViewController.h */,
-				E145A5571CCCAC6D00724886 /* ViewController.m */,
+				E101C3981CCDEF1000727AC2 /* HLHallViewController.h */,
+				E101C3991CCDEF1000727AC2 /* HLHallViewController.m */,
 			);
 			name = "Controller ";
 			sourceTree = "<group>";
@@ -208,6 +233,8 @@
 		E17DA6081CCCC3B7006DE486 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E101C3971CCDED7800727AC2 /* Setting(我的彩票) */,
+				E101C3961CCDED4400727AC2 /* Luck(幸运广场) */,
 				E17DA60C1CCCC4E4006DE486 /* Other(分类、第三方框架) */,
 				E17DA60B1CCCC4BA006DE486 /* Award(开奖信息) */,
 				E17DA60A1CCCC4AA006DE486 /* Buy(合买跟单) */,
@@ -246,6 +273,7 @@
 			children = (
 				E145A5511CCCAC6D00724886 /* main.m */,
 				E145A5531CCCAC6D00724886 /* AppDelegate.h */,
+				E101C39E1CCE04B200727AC2 /* HisunLottery-Prefix.pch */,
 				E145A5541CCCAC6D00724886 /* AppDelegate.m */,
 			);
 			name = "Other(分类、第三方框架)";
@@ -382,10 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E145A5581CCCAC6D00724886 /* ViewController.m in Sources */,
 				E101C3921CCDD56500727AC2 /* HLTabBarModel.m in Sources */,
+				E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */,
 				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
+				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,
+				E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */,
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,
 			);
@@ -469,6 +499,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -511,6 +542,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -530,6 +562,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HisunLottery/HisunLottery-Prefix.pch";
 				INFOPLIST_FILE = HisunLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -545,6 +579,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HisunLottery/HisunLottery-Prefix.pch";
 				INFOPLIST_FILE = HisunLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

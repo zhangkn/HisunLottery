@@ -30,7 +30,7 @@
         <!--Item-->
         <scene sceneID="TGD-3R-IIA">
             <objects>
-                <navigationController id="sPK-pM-rE2" sceneMemberID="viewController">
+                <navigationController id="sPK-pM-rE2" customClass="HLNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="kXQ-Tp-Cqp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kjQ-uR-661">
@@ -48,7 +48,7 @@
         <!--Item-->
         <scene sceneID="zMc-4g-xAf">
             <objects>
-                <navigationController id="LyR-Yc-OOH" sceneMemberID="viewController">
+                <navigationController id="LyR-Yc-OOH" customClass="HLNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="0dQ-CC-JfZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HNZ-PU-wcy">
@@ -66,7 +66,7 @@
         <!--Item-->
         <scene sceneID="6bL-8K-5xt">
             <objects>
-                <navigationController id="8U1-47-tKL" sceneMemberID="viewController">
+                <navigationController id="8U1-47-tKL" customClass="HLNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="U1J-lL-FF5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xhJ-xD-gEc">
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="-754" y="355"/>
         </scene>
-        <!--View Controller-->
+        <!--购彩大厅-->
         <scene sceneID="7eH-r4-5de">
             <objects>
-                <viewController id="NpO-uM-GW6" sceneMemberID="viewController">
+                <viewController id="NpO-uM-GW6" customClass="HLHallViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9qc-m5-NDu"/>
                         <viewControllerLayoutGuide type="bottom" id="eJe-Z4-jya"/>
@@ -94,17 +94,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.98431378599999997" green="0.094117656349999995" blue="0.53725492949999998" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lMc-dV-64z"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="lMc-dV-64z">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fVb-mi-CUi">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Q8-wC-yZ6">
+                                <rect key="frame" x="255" y="11" width="49" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="资讯" image="zixunBarFlat"/>
+                                <connections>
+                                    <segue destination="RkT-Zj-JOV" kind="push" id="ZrG-Dc-1jZ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwe-ea-x1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-400" y="-1320"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="s2v-yb-1wF">
+            <objects>
+                <viewController id="RkT-Zj-JOV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WP0-iC-Wuy"/>
+                        <viewControllerLayoutGuide type="bottom" id="9tC-fD-c8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zhr-Bc-nlF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.67032265020000004" green="0.73123998749999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pNe-dN-01q"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nch-1W-9Fj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-1320"/>
+        </scene>
         <!--Item-->
         <scene sceneID="e9S-Vo-u1s">
             <objects>
-                <navigationController id="PBo-85-6dj" sceneMemberID="viewController">
+                <navigationController id="PBo-85-6dj" customClass="HLNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="4me-AQ-zRP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GvY-cQ-C7M">
@@ -122,8 +153,8 @@
         <!--Navigation Controller-->
         <scene sceneID="nws-gx-Ygs">
             <objects>
-                <navigationController id="JUg-Uo-VQW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="TabBar1" id="fKS-xb-dkT"/>
+                <navigationController id="JUg-Uo-VQW" customClass="HLNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="fKS-xb-dkT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dzQ-h9-ePc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -219,6 +250,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TabBar1" width="64" height="49"/>
+        <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
 </document>

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  HLButton.h
 //  HisunLottery
 //
-//  Created by devzkn on 4/24/16.
+//  Created by devzkn on 4/25/16.
 //  Copyright © 2016 hisun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HLButton : UIButton
 
 @end
-

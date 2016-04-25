@@ -8,8 +8,7 @@
 
 #import "HLTabBar.h"
 #import "HLTabBarModel.h"
-
-
+#import "HLButton.h"
 
 @interface HLTabBar ()
 
@@ -31,7 +30,7 @@
     
     for (int i =0; i<models.count; i++) {
         //
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        HLButton *btn = [HLButton buttonWithType:UIButtonTypeCustom];
         HLTabBarModel *model = models[i];
         //设置背景图片
         [btn setBackgroundImage:model.image  forState:UIControlStateNormal];
@@ -80,7 +79,8 @@
 #pragma  mark - 提供类方法创建View
 
 + (instancetype)tabBarWithModel:(NSArray *)models view:(UIView *)view{
-    HLTabBar * tabBar = [[HLTabBar alloc] initWithFrame:view.frame model:models];
+    HLTabBar * tabBar = [[HLTabBar alloc] initWithFrame:view.bounds model:models];
+    [view addSubview:tabBar];
     return tabBar;
 }
 
