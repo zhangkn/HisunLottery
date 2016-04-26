@@ -222,7 +222,13 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="我的彩票" id="hXt-4Y-DaC"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="hXt-4Y-DaC">
+                        <barButtonItem key="rightBarButtonItem" title="设置" id="fGE-HO-aXh">
+                            <connections>
+                                <action selector="setting:" destination="MDQ-L4-vnE" id="nAc-sx-g8C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="loginButton" destination="X4F-tB-5zN" id="zJB-9J-jEn"/>

@@ -20,9 +20,12 @@
 }
 
 + (void) setttingAppearance{
-   
+   //设置全局导航条外观
     [self settingUINavigationBarAppearance];
-    //设置导航条按钮主题
+    if (IOS7) {
+        return;//不需要设置全局导航条按钮主题
+    }
+    //设置全局导航条按钮主题
     [self settingbarButtonItenAppearance];
 }
 
@@ -57,13 +60,14 @@
     //    NSDictionary *dict = @{UITextAttributeTextColor:[UIColor whiteColor]};
     NSDictionary *dict = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:15]};
     [navigationBar setTitleTextAttributes:dict];
+    //2、The tint color to apply to the navigation items and bar button items. 导航条的主题颜色
+    [navigationBar setTintColor:[UIColor whiteColor]];
+
     
 }
 
 + (void) settingbarButtonItenAppearance{
-    //2、The tint color to apply to the navigation items and bar button items. 导航条的主题颜色
-    //    [navigationBar setTintColor:[UIColor whiteColor]];
-    /**
+        /**
      NS_CLASS_AVAILABLE_IOS(2_0) @interface UIBarItem : NSObject <NSCoding, UIAppearance>
      */
     //导航栏按钮主题
@@ -75,6 +79,7 @@
      导航栏返回按钮背景：- (void)setBackButtonBackgroundImage:(UIImage *)backgroundImage forState:(UIControlState)state barMetrics:(UIBarMetrics)barMetrics;
      */
     [barButtonIten setTintColor:[UIColor whiteColor]];
+    
     [barButtonIten setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [barButtonIten setBackgroundImage:[UIImage imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
     

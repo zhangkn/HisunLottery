@@ -23,6 +23,7 @@
 		E145A5761CCCAC6E00724886 /* HisunLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5751CCCAC6E00724886 /* HisunLotteryUITests.m */; };
 		E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */; };
 		E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */; };
+		E1DEDF871CCF5F0C00C11055 /* HLSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLoginViewController.m; sourceTree = "<group>"; };
 		E1DEDF811CCF13A200C11055 /* UIImage+ResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizableImage.h"; sourceTree = "<group>"; };
 		E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizableImage.m"; sourceTree = "<group>"; };
+		E1DEDF851CCF5F0C00C11055 /* HLSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingTableViewController.h; sourceTree = "<group>"; };
+		E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,12 +144,12 @@
 			name = "Luck(幸运广场)";
 			sourceTree = "<group>";
 		};
-		E101C3971CCDED7800727AC2 /* Setting(我的彩票) */ = {
+		E101C3971CCDED7800727AC2 /* Mine(我的彩票) */ = {
 			isa = PBXGroup;
 			children = (
 				E1DEDF7F1CCF0A6600C11055 /* Controller */,
 			);
-			name = "Setting(我的彩票)";
+			name = "Mine(我的彩票)";
 			sourceTree = "<group>";
 		};
 		E101C3A21CCE19D100727AC2 /* View */ = {
@@ -252,7 +255,8 @@
 		E17DA6081CCCC3B7006DE486 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E101C3971CCDED7800727AC2 /* Setting(我的彩票) */,
+				E1DEDF841CCF5E7B00C11055 /* Setting(设置) */,
+				E101C3971CCDED7800727AC2 /* Mine(我的彩票) */,
 				E101C3961CCDED4400727AC2 /* Luck(幸运广场) */,
 				E17DA60C1CCCC4E4006DE486 /* Other(分类、第三方框架) */,
 				E17DA60B1CCCC4BA006DE486 /* Award(开奖信息) */,
@@ -316,6 +320,15 @@
 				E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */,
 			);
 			name = Tool;
+			sourceTree = "<group>";
+		};
+		E1DEDF841CCF5E7B00C11055 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEDF851CCF5F0C00C11055 /* HLSettingTableViewController.h */,
+				E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */,
+			);
+			name = "Setting(设置)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +464,7 @@
 			files = (
 				E101C3921CCDD56500727AC2 /* HLTabBarModel.m in Sources */,
 				E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */,
+				E1DEDF871CCF5F0C00C11055 /* HLSettingTableViewController.m in Sources */,
 				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
 				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
 				E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */,
