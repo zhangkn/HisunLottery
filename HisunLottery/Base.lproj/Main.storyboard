@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar View Controller-->
@@ -191,18 +192,41 @@
         <!--我的彩票-->
         <scene sceneID="Rn6-3g-TJf">
             <objects>
-                <viewController id="MDQ-L4-vnE" sceneMemberID="viewController">
+                <viewController id="MDQ-L4-vnE" customClass="HLLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u7e-Bi-14G"/>
                         <viewControllerLayoutGuide type="bottom" id="bTK-Uy-hoG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kcy-JY-Mf8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-tB-5zN">
+                                <rect key="frame" x="10" y="220" width="300" height="40"/>
+                                <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.5" minY="0.5" maxX="0.5" maxY="0.5"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="YCz-a7-Ceu">
+                                <rect key="frame" x="6" y="0.0" width="308" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Isx-e9-3rG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.83621128030000003" green="1" blue="0.96531162280000005" alpha="0.22" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="YCz-a7-Ceu" secondAttribute="trailing" constant="-10" id="1yK-aK-fPc"/>
+                            <constraint firstItem="YCz-a7-Ceu" firstAttribute="top" secondItem="u7e-Bi-14G" secondAttribute="bottom" id="AeH-S7-Ofy"/>
+                            <constraint firstItem="YCz-a7-Ceu" firstAttribute="leading" secondItem="Kcy-JY-Mf8" secondAttribute="leadingMargin" constant="-10" id="X8y-Ch-q9l"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="我的彩票" id="hXt-4Y-DaC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="loginButton" destination="X4F-tB-5zN" id="zJB-9J-jEn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmo-4h-gE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,6 +273,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="全部彩种" image="YellowDownArrow"/>
                         </button>
+                        <barButtonItem key="rightBarButtonItem" image="NavInfoFlat" id="Jzz-JC-Zkc"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
@@ -258,6 +283,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LoginScreen" width="150" height="70"/>
+        <image name="NavInfoFlat" width="22" height="22"/>
         <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>

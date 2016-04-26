@@ -20,6 +20,13 @@
 }
 
 + (void) setttingAppearance{
+   
+    [self settingUINavigationBarAppearance];
+    //设置导航条按钮主题
+    [self settingbarButtonItenAppearance];
+}
+
++ (void) settingUINavigationBarAppearance{
     /*
      @protocol UIAppearance <NSObject>  协议的代理方法+ (instancetype)appearance;
      
@@ -51,9 +58,29 @@
     NSDictionary *dict = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:15]};
     [navigationBar setTitleTextAttributes:dict];
     
-    
 }
 
++ (void) settingbarButtonItenAppearance{
+    //2、The tint color to apply to the navigation items and bar button items. 导航条的主题颜色
+    //    [navigationBar setTintColor:[UIColor whiteColor]];
+    /**
+     NS_CLASS_AVAILABLE_IOS(2_0) @interface UIBarItem : NSObject <NSCoding, UIAppearance>
+     */
+    //导航栏按钮主题
+    UIBarButtonItem *barButtonIten = [UIBarButtonItem appearance];
+    /*
+     设置主题的方法：
+     背景：- (void)setBackgroundImage:(UIImage *)backgroundImage forState:(UIControlState)state barMetrics:(UIBarMetrics)barMetrics;
+     文字：- (void)setTitleTextAttributes:(NSDictionary *)attributes forState:(UIControlState)state;
+     导航栏返回按钮背景：- (void)setBackButtonBackgroundImage:(UIImage *)backgroundImage forState:(UIControlState)state barMetrics:(UIBarMetrics)barMetrics;
+     */
+    [barButtonIten setTintColor:[UIColor whiteColor]];
+    [barButtonIten setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [barButtonIten setBackgroundImage:[UIImage imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    
+    [barButtonIten setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [barButtonIten setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+}
 
 
 #pragma mark - 重写pushViewController: animated:

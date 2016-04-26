@@ -15,7 +15,7 @@
 //    [self.imageView setContentMode:UIViewContentModeCenter];
 }
 
-
+#pragma  make - 使用条件编译进行兼容
 /**
  warning: could not load any Objective-C class information. This will significantly reduce the quality of type information available.
  self.titleLabel.text  不能使用，它内部会调用 titleRectForContentRect：造成死循环。

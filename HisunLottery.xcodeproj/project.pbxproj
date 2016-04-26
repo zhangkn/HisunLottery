@@ -21,6 +21,8 @@
 		E145A5601CCCAC6D00724886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145A55E1CCCAC6D00724886 /* LaunchScreen.storyboard */; };
 		E145A56B1CCCAC6E00724886 /* HisunLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A56A1CCCAC6E00724886 /* HisunLotteryTests.m */; };
 		E145A5761CCCAC6E00724886 /* HisunLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5751CCCAC6E00724886 /* HisunLotteryUITests.m */; };
+		E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */; };
+		E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		E145A5711CCCAC6E00724886 /* HisunLotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HisunLotteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145A5751CCCAC6E00724886 /* HisunLotteryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisunLotteryUITests.m; sourceTree = "<group>"; };
 		E145A5771CCCAC6E00724886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DEDF7C1CCF084D00C11055 /* HLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLoginViewController.h; sourceTree = "<group>"; };
+		E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLoginViewController.m; sourceTree = "<group>"; };
+		E1DEDF811CCF13A200C11055 /* UIImage+ResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizableImage.h"; sourceTree = "<group>"; };
+		E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizableImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 		E101C3971CCDED7800727AC2 /* Setting(我的彩票) */ = {
 			isa = PBXGroup;
 			children = (
+				E1DEDF7F1CCF0A6600C11055 /* Controller */,
 			);
 			name = "Setting(我的彩票)";
 			sourceTree = "<group>";
@@ -284,12 +291,31 @@
 		E17DA60C1CCCC4E4006DE486 /* Other(分类、第三方框架) */ = {
 			isa = PBXGroup;
 			children = (
+				E1DEDF801CCF135600C11055 /* Tool */,
 				E145A5511CCCAC6D00724886 /* main.m */,
 				E145A5531CCCAC6D00724886 /* AppDelegate.h */,
 				E101C39E1CCE04B200727AC2 /* HisunLottery-Prefix.pch */,
 				E145A5541CCCAC6D00724886 /* AppDelegate.m */,
 			);
 			name = "Other(分类、第三方框架)";
+			sourceTree = "<group>";
+		};
+		E1DEDF7F1CCF0A6600C11055 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */,
+				E1DEDF7C1CCF084D00C11055 /* HLLoginViewController.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1DEDF801CCF135600C11055 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEDF811CCF13A200C11055 /* UIImage+ResizableImage.h */,
+				E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,8 +453,10 @@
 				E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */,
 				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
 				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
+				E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,
 				E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */,
+				E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */,
 				E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */,
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,

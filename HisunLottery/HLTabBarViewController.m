@@ -41,7 +41,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //创建自定义tabBar
-    [self setttingTabBar];    
+    [self setttingTabBar];
+//    self.edgesForExtendedLayout//@property(nonatomic,assign) UIRectEdge edgesForExtendedLayout NS_AVAILABLE_IOS(7_0); // Defaults to UIRectEdgeAll
+    /*
+     typedef NS_OPTIONS(NSUInteger, UIRectEdge) {
+     UIRectEdgeNone   = 0,
+     UIRectEdgeTop    = 1 << 0,
+     UIRectEdgeLeft   = 1 << 1,
+     UIRectEdgeBottom = 1 << 2,
+     UIRectEdgeRight  = 1 << 3,
+     UIRectEdgeAll    = UIRectEdgeTop | UIRectEdgeLeft | UIRectEdgeBottom | UIRectEdgeRight
+     } NS_ENUM_AVAILABLE_IOS(7_0);// | 并运算
+     */
+
 
 }
 #pragma mark - 自定义TabBar
