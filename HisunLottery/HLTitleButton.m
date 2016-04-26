@@ -7,8 +7,13 @@
 //
 
 #import "HLTitleButton.h"
+#import <Availability.h>
 
 @implementation HLTitleButton
+
+- (void)awakeFromNib{
+//    [self.imageView setContentMode:UIViewContentModeCenter];
+}
 
 
 /**
@@ -20,9 +25,23 @@
     CGFloat titleX = 0;
     CGFloat titleY = 0;
     CGFloat titleHeight = contentRect.size.height;
-    NSDictionary *dict =@{NSFontAttributeName:[UIFont systemFontOfSize:15]};
-    CGFloat titleWeight = [self.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size.width;
-    return CGRectMake(titleX, titleY, titleWeight, titleHeight);    
+    CGFloat titleWeight= 0;
+    UIFont *font = [UIFont systemFontOfSize:15.0];
+    if (IOS7) {//判断运行时的版本
+        //编译环境的判断#define __IPHONE_7_0     70000  －－#import <Availability.h>
+#ifdef __IPHONE_7_0
+        //计算按钮宽度
+        NSDictionary *dict =@{NSFontAttributeName:font};
+        titleWeight = [self.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size.width;
+        
+#else
+        titleWeight = [self.currentTitle sizeWithFont:font].width;
+#endif
+
+    }else{
+        titleWeight = [self.currentTitle sizeWithFont:font].width;
+    }
+    return CGRectMake(titleX, titleY, titleWeight, titleHeight);
 }
 
 #if 1

@@ -246,6 +246,7 @@
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="efv-N0-NYi" customClass="HLTitleButton">
                             <rect key="frame" x="116" y="11" width="88" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="全部彩种" image="YellowDownArrow"/>
                         </button>
                     </navigationItem>
