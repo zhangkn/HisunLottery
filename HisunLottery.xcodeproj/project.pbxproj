@@ -21,6 +21,8 @@
 		E145A5601CCCAC6D00724886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145A55E1CCCAC6D00724886 /* LaunchScreen.storyboard */; };
 		E145A56B1CCCAC6E00724886 /* HisunLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A56A1CCCAC6E00724886 /* HisunLotteryTests.m */; };
 		E145A5761CCCAC6E00724886 /* HisunLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5751CCCAC6E00724886 /* HisunLotteryUITests.m */; };
+		E1BE1EB81CD05FDA00B4854D /* HLSettingItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE1EB71CD05FDA00B4854D /* HLSettingItemModel.m */; };
+		E1BE1EBB1CD060AE00B4854D /* HLSettingItemGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE1EBA1CD060AE00B4854D /* HLSettingItemGroupModel.m */; };
 		E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */; };
 		E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */; };
 		E1DEDF871CCF5F0C00C11055 /* HLSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */; };
@@ -73,6 +75,10 @@
 		E145A5711CCCAC6E00724886 /* HisunLotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HisunLotteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145A5751CCCAC6E00724886 /* HisunLotteryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisunLotteryUITests.m; sourceTree = "<group>"; };
 		E145A5771CCCAC6E00724886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BE1EB61CD05FDA00B4854D /* HLSettingItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingItemModel.h; sourceTree = "<group>"; };
+		E1BE1EB71CD05FDA00B4854D /* HLSettingItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingItemModel.m; sourceTree = "<group>"; };
+		E1BE1EB91CD060AE00B4854D /* HLSettingItemGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingItemGroupModel.h; sourceTree = "<group>"; };
+		E1BE1EBA1CD060AE00B4854D /* HLSettingItemGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingItemGroupModel.m; sourceTree = "<group>"; };
 		E1DEDF7C1CCF084D00C11055 /* HLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLoginViewController.h; sourceTree = "<group>"; };
 		E1DEDF7D1CCF084D00C11055 /* HLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLoginViewController.m; sourceTree = "<group>"; };
 		E1DEDF811CCF13A200C11055 /* UIImage+ResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizableImage.h"; sourceTree = "<group>"; };
@@ -304,6 +310,26 @@
 			name = "Other(分类、第三方框架)";
 			sourceTree = "<group>";
 		};
+		E1BE1EB41CD05FA800B4854D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEDF851CCF5F0C00C11055 /* HLSettingTableViewController.h */,
+				E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1BE1EB51CD05FAF00B4854D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE1EB61CD05FDA00B4854D /* HLSettingItemModel.h */,
+				E1BE1EB91CD060AE00B4854D /* HLSettingItemGroupModel.h */,
+				E1BE1EBA1CD060AE00B4854D /* HLSettingItemGroupModel.m */,
+				E1BE1EB71CD05FDA00B4854D /* HLSettingItemModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E1DEDF7F1CCF0A6600C11055 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,8 +351,8 @@
 		E1DEDF841CCF5E7B00C11055 /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
-				E1DEDF851CCF5F0C00C11055 /* HLSettingTableViewController.h */,
-				E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */,
+				E1BE1EB51CD05FAF00B4854D /* Model */,
+				E1BE1EB41CD05FA800B4854D /* Controller */,
 			);
 			name = "Setting(设置)";
 			sourceTree = "<group>";
@@ -469,7 +495,9 @@
 				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
 				E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,
+				E1BE1EBB1CD060AE00B4854D /* HLSettingItemGroupModel.m in Sources */,
 				E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */,
+				E1BE1EB81CD05FDA00B4854D /* HLSettingItemModel.m in Sources */,
 				E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */,
 				E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */,
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
@@ -607,6 +635,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -623,6 +652,8 @@
 				INFOPLIST_FILE = HisunLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hisunpay.www.HisunLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -640,6 +671,8 @@
 				INFOPLIST_FILE = HisunLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hisunpay.www.HisunLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
