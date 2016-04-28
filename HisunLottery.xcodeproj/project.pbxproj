@@ -14,6 +14,9 @@
 		E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3991CCDEF1000727AC2 /* HLHallViewController.m */; };
 		E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C39C1CCDF7E700727AC2 /* HLNavigationController.m */; };
 		E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E101C3A01CCE19C900727AC2 /* HLTitleButton.m */; };
+		E10CDF131CD19D16006BBE47 /* HLSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CDF121CD19D16006BBE47 /* HLSettingCell.m */; };
+		E10CDF171CD1A154006BBE47 /* HLSettingArrowItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CDF161CD1A154006BBE47 /* HLSettingArrowItemModel.m */; };
+		E10CDF1A1CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CDF191CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m */; };
 		E145A5521CCCAC6D00724886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5511CCCAC6D00724886 /* main.m */; };
 		E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E145A5541CCCAC6D00724886 /* AppDelegate.m */; };
 		E145A55B1CCCAC6D00724886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E145A5591CCCAC6D00724886 /* Main.storyboard */; };
@@ -61,6 +64,12 @@
 		E101C39E1CCE04B200727AC2 /* HisunLottery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HisunLottery-Prefix.pch"; sourceTree = "<group>"; };
 		E101C39F1CCE19C900727AC2 /* HLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTitleButton.h; sourceTree = "<group>"; };
 		E101C3A01CCE19C900727AC2 /* HLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTitleButton.m; sourceTree = "<group>"; };
+		E10CDF111CD19D16006BBE47 /* HLSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingCell.h; sourceTree = "<group>"; };
+		E10CDF121CD19D16006BBE47 /* HLSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingCell.m; sourceTree = "<group>"; };
+		E10CDF151CD1A154006BBE47 /* HLSettingArrowItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingArrowItemModel.h; sourceTree = "<group>"; };
+		E10CDF161CD1A154006BBE47 /* HLSettingArrowItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingArrowItemModel.m; sourceTree = "<group>"; };
+		E10CDF181CD1A1A9006BBE47 /* HLSettingSwitchItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingSwitchItemModel.h; sourceTree = "<group>"; };
+		E10CDF191CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingSwitchItemModel.m; sourceTree = "<group>"; };
 		E145A54D1CCCAC6D00724886 /* HisunLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HisunLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E145A5511CCCAC6D00724886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E145A5531CCCAC6D00724886 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,6 +174,15 @@
 				E101C3A01CCE19C900727AC2 /* HLTitleButton.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		E10CDF141CD19D1C006BBE47 /* View  */ = {
+			isa = PBXGroup;
+			children = (
+				E10CDF111CD19D16006BBE47 /* HLSettingCell.h */,
+				E10CDF121CD19D16006BBE47 /* HLSettingCell.m */,
+			);
+			name = "View ";
 			sourceTree = "<group>";
 		};
 		E145A5441CCCAC6D00724886 = {
@@ -326,6 +344,10 @@
 				E1BE1EB91CD060AE00B4854D /* HLSettingItemGroupModel.h */,
 				E1BE1EBA1CD060AE00B4854D /* HLSettingItemGroupModel.m */,
 				E1BE1EB71CD05FDA00B4854D /* HLSettingItemModel.m */,
+				E10CDF181CD1A1A9006BBE47 /* HLSettingSwitchItemModel.h */,
+				E10CDF191CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m */,
+				E10CDF151CD1A154006BBE47 /* HLSettingArrowItemModel.h */,
+				E10CDF161CD1A154006BBE47 /* HLSettingArrowItemModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -353,6 +375,7 @@
 			children = (
 				E1BE1EB51CD05FAF00B4854D /* Model */,
 				E1BE1EB41CD05FA800B4854D /* Controller */,
+				E10CDF141CD19D1C006BBE47 /* View  */,
 			);
 			name = "Setting(设置)";
 			sourceTree = "<group>";
@@ -488,10 +511,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10CDF131CD19D16006BBE47 /* HLSettingCell.m in Sources */,
+				E10CDF171CD1A154006BBE47 /* HLSettingArrowItemModel.m in Sources */,
 				E101C3921CCDD56500727AC2 /* HLTabBarModel.m in Sources */,
 				E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */,
 				E1DEDF871CCF5F0C00C11055 /* HLSettingTableViewController.m in Sources */,
 				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
+				E10CDF1A1CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m in Sources */,
 				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
 				E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,

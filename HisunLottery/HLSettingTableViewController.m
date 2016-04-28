@@ -9,6 +9,9 @@
 #import "HLSettingTableViewController.h"
 #import "HLSettingItemGroupModel.h"
 #import "HLSettingItemModel.h"
+#import "HLSettingCell.h"
+#import "HLSettingSwitchItemModel.h"
+#import "HLSettingArrowItemModel.h"
 
 @interface HLSettingTableViewController ()
 
@@ -22,13 +25,25 @@
 - (NSMutableArray *)dataList{
     if (nil == _dataList) {
         _dataList = [NSMutableArray array];
-        NSArray *dictArray = @[@{@"title":@"消息推送和提醒",@"icon":@"MorePush"},@{@"title":@"摇一摇机选",@"icon":@"handShake"}];
-        NSDictionary *dict0= @{@"footer":@"第一组footer",@"header":@"第一组的header",@"items":dictArray};
-        NSArray *dictArray1 = @[@{@"title":@"检查新版本",@"icon":@"MoreUpdate"},@{@"title":@"帮助",@"icon":@"MoreHelp"}];
-        NSDictionary *dict1= @{@"footer":@"第2组footer",@"header":@"第2组的header",@"items":dictArray1};
-        HLSettingItemGroupModel *group0 = [HLSettingItemGroupModel groupModelsWithDictionary:dict0];
-        HLSettingItemGroupModel *group1 = [HLSettingItemGroupModel groupModelsWithDictionary:dict1];
+        //第1组模型构建
+        NSDictionary *dictPush = @{@"title":@"消息推送和提醒",@"icon":@"MorePush"};
+        NSDictionary *dictHandShake =  @{@"title":@"摇一摇机选",@"icon":@"handShake"};
+        HLSettingItemGroupModel *group0 = [[HLSettingItemGroupModel alloc]init];
+        HLSettingSwitchItemModel *pushItem = [HLSettingSwitchItemModel itemModelWithDictionary:dictPush];
+        HLSettingSwitchItemModel *handShakeItem = [HLSettingSwitchItemModel itemModelWithDictionary:dictHandShake];
+        group0.items = @[pushItem,handShakeItem];
+        [group0 setHeader:@"第一组的header"];
+        [group0 setFooter:@"第一组的footer"];
+        //第二组模型构建
+        NSDictionary *moreUpdateDict = @{@"title":@"检查新版本",@"icon":@"MoreUpdate"};
+        NSDictionary *moreHelpDict =  @{@"title":@"帮助",@"icon":@"MoreHelp"};
+        HLSettingItemGroupModel *group1 = [[HLSettingItemGroupModel alloc]init];
         
+        HLSettingArrowItemModel *moreUpdateItem = [HLSettingArrowItemModel itemModelWithDictionary:moreUpdateDict];
+        HLSettingArrowItemModel *moreHelpDictItem = [HLSettingArrowItemModel itemModelWithDictionary:moreHelpDict];
+        group1.items = @[moreUpdateItem,moreHelpDictItem];
+        [group1 setHeader:@"第2组的header"];
+        [group1 setFooter:@"第2组的footer"];
         [_dataList addObject:group0];
         [_dataList addObject:group1];
     }
@@ -59,16 +74,9 @@
 }
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *idetifier = @"UITableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:idetifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:idetifier];
-        //设置一次性属性
-    }
-    HLSettingItemGroupModel *group = self.dataList[indexPath.section];
+        HLSettingItemGroupModel *group = self.dataList[indexPath.section];
     HLSettingItemModel *itemModel = group.items[indexPath.row];
-    [cell.textLabel setText:itemModel.title];
-    [cell.imageView setImage: itemModel.iconImage];
+    HLSettingCell *cell =[HLSettingCell tableVieCellWithItemModel:itemModel tableView:tableView];
     return cell;
 }
 
