@@ -41,5 +41,11 @@
     return tmpArrayM;
 }
 
++ (instancetype)itemModelWithTitle:(NSString *)title icon:(NSString *)icon{
+    NSDictionary *dict = @{@"title":title,@"icon":icon};
+    return [[self alloc]initWithDictionary:dict];
+}
+
+
 
 @end

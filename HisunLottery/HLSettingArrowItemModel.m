@@ -10,4 +10,11 @@
 
 @implementation HLSettingArrowItemModel
 
++ (instancetype)itemModelWithTitle:(NSString *)title icon:(NSString *)icon destVCClass:(Class)destVCClass{
+    HLSettingArrowItemModel *item = [super itemModelWithTitle:title icon:icon];
+    [item setDestVCClass:destVCClass];
+    return item;
+}
+
+
 @end

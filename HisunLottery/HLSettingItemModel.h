@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^HLSettingItemModelOptionBlock)();
+
 @interface HLSettingItemModel : UIView
 
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *icon;
 @property (nonatomic,strong,readonly) UIImage *iconImage;
+
+@property (nonatomic,copy) HLSettingItemModelOptionBlock optionBlock;
+
+
 /**
  提供类方法，返回数据模型数组--工厂模式
  */
@@ -20,6 +26,9 @@
 //定义初始化方法 KVC的使用
 - (instancetype) initWithDictionary:(NSDictionary *) dict;
 + (instancetype) itemModelWithDictionary:(NSDictionary *) dict;
+
++ (instancetype) itemModelWithTitle:(NSString *) title icon:(NSString *)icon;
+
 
 
 

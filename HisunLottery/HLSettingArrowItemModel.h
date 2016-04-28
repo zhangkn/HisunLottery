@@ -9,5 +9,8 @@
 #import "HLSettingItemModel.h"
 
 @interface HLSettingArrowItemModel : HLSettingItemModel
-@property (nonatomic,assign) Class *destVCClass;//目标控制器的Classe
+@property (nonatomic,assign) Class destVCClass;//目标控制器的Classe
+
++ (instancetype)itemModelWithTitle:(NSString *)title icon:(NSString *)icon destVCClass:(Class)destVCClass;
+
 @end
