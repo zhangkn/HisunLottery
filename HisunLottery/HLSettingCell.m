@@ -9,16 +9,31 @@
 #import "HLSettingCell.h"
 #import "HLSettingArrowItemModel.h"
 #import "HLSettingSwitchItemModel.h"
+#import "HLSettingLabeltemModel.h"
 
 @interface HLSettingCell ()
 
 @property (nonatomic,strong) UISwitch *accessorySwitchView;
 @property (nonatomic,strong) UIImageView *accessoryDisclosureIndicatorView;
+//label 属性
+@property (nonatomic,strong) UILabel *label;
 
 
 @end
 
 @implementation HLSettingCell
+
+- (UILabel *)label{
+    if (nil == _label) {
+        UILabel *tmpView = [[UILabel alloc]init];
+        [tmpView setTextColor:[UIColor redColor]];
+        [tmpView setTextAlignment:NSTextAlignmentRight];
+        [tmpView setBounds:CGRectMake(0, 0, 100, 44)];
+
+        _label = tmpView;
+    }
+    return _label;
+}
 
 - (UIImageView *)accessoryDisclosureIndicatorView{
     if (nil == _accessoryDisclosureIndicatorView) {
@@ -61,6 +76,12 @@
         [self setAccessoryView:self.accessorySwitchView];
         //selectionStyle
         [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    }else if ([self.itemModel isKindOfClass:[HLSettingLabeltemModel class]]){
+        [self setSelectionStyle:UITableViewCellSelectionStyleDefault];//恢复可以选择的默认状态
+        HLSettingLabeltemModel *labelModel = (HLSettingLabeltemModel *)self.itemModel;
+        [self.label setText:labelModel.text];
+        [self  setAccessoryView:self.label];
+        
     }else{
         [self setAccessoryView:nil];
         [self setSelectionStyle:UITableViewCellSelectionStyleDefault];
@@ -83,6 +104,7 @@
     }
     return cell;
 }
+
 
 
 

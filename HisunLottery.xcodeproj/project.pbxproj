@@ -43,6 +43,8 @@
 		E1F8E6E01CD2F0A100EA1CD9 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E6DF1CD2F0A100EA1CD9 /* products.json */; };
 		E1F8E6E41CD2F75300EA1CD9 /* HLPushTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6E31CD2F75300EA1CD9 /* HLPushTableViewController.m */; };
 		E1F8E6E91CD3030500EA1CD9 /* HLBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6E81CD3030500EA1CD9 /* HLBasicTableViewController.m */; };
+		E1F8E6EF1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6EE1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m */; };
+		E1F8E6F21CD30D3200EA1CD9 /* HLScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,10 @@
 		E1F8E6E31CD2F75300EA1CD9 /* HLPushTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLPushTableViewController.m; sourceTree = "<group>"; };
 		E1F8E6E71CD3030500EA1CD9 /* HLBasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLBasicTableViewController.h; sourceTree = "<group>"; };
 		E1F8E6E81CD3030500EA1CD9 /* HLBasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLBasicTableViewController.m; sourceTree = "<group>"; };
+		E1F8E6ED1CD30CD600EA1CD9 /* HLSettingLabeltemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSettingLabeltemModel.h; sourceTree = "<group>"; };
+		E1F8E6EE1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingLabeltemModel.m; sourceTree = "<group>"; };
+		E1F8E6F01CD30D3200EA1CD9 /* HLScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLScoreViewController.h; sourceTree = "<group>"; };
+		E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLScoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,26 +248,21 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		E10CDF2D1CD1EAF9006BBE47 /* Product */ = {
+		E10CDF2D1CD1EAF9006BBE47 /* ProductVC */ = {
 			isa = PBXGroup;
 			children = (
 				E10CDF2A1CD1EAF4006BBE47 /* HLProductCollectionViewController.h */,
 				E10CDF2B1CD1EAF4006BBE47 /* HLProductCollectionViewController.m */,
+				E1F8E6F31CD30D3B00EA1CD9 /* Score */,
 			);
-			name = Product;
+			name = ProductVC;
 			sourceTree = "<group>";
 		};
 		E10CDF2E1CD1FF27006BBE47 /* SettingItemModel */ = {
 			isa = PBXGroup;
 			children = (
-				E1BE1EB61CD05FDA00B4854D /* HLSettingItemModel.h */,
-				E1BE1EB91CD060AE00B4854D /* HLSettingItemGroupModel.h */,
-				E1BE1EBA1CD060AE00B4854D /* HLSettingItemGroupModel.m */,
-				E1BE1EB71CD05FDA00B4854D /* HLSettingItemModel.m */,
-				E10CDF181CD1A1A9006BBE47 /* HLSettingSwitchItemModel.h */,
-				E10CDF191CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m */,
-				E10CDF151CD1A154006BBE47 /* HLSettingArrowItemModel.h */,
-				E10CDF161CD1A154006BBE47 /* HLSettingArrowItemModel.m */,
+				E1F8E6EC1CD30A4E00EA1CD9 /* ItemModel */,
+				E1F8E6EB1CD30A2500EA1CD9 /* GroupModel */,
 			);
 			name = SettingItemModel;
 			sourceTree = "<group>";
@@ -444,11 +445,8 @@
 			isa = PBXGroup;
 			children = (
 				E1F8E6E61CD302D500EA1CD9 /* SettingVC */,
-				E1F8E6E51CD2F75D00EA1CD9 /* Push */,
-				E10CDF2D1CD1EAF9006BBE47 /* Product */,
-				E1F8E6E11CD2F6D800EA1CD9 /* Test */,
-				E1F8E6E71CD3030500EA1CD9 /* HLBasicTableViewController.h */,
-				E1F8E6E81CD3030500EA1CD9 /* HLBasicTableViewController.m */,
+				E1F8E6E11CD2F6D800EA1CD9 /* TestVC */,
+				E1F8E6EA1CD3084600EA1CD9 /* BasicTableViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -490,32 +488,76 @@
 			name = "Setting(设置)";
 			sourceTree = "<group>";
 		};
-		E1F8E6E11CD2F6D800EA1CD9 /* Test */ = {
+		E1F8E6E11CD2F6D800EA1CD9 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
 				E10CDF1B1CD1DDDC006BBE47 /* HLTestViewController.h */,
 				E10CDF1C1CD1DDDC006BBE47 /* HLTestViewController.m */,
 				E10CDF1E1CD1DDEC006BBE47 /* HLTestViewController.xib */,
 			);
-			name = Test;
+			name = TestVC;
 			sourceTree = "<group>";
 		};
-		E1F8E6E51CD2F75D00EA1CD9 /* Push */ = {
+		E1F8E6E51CD2F75D00EA1CD9 /* PushVC */ = {
 			isa = PBXGroup;
 			children = (
 				E1F8E6E21CD2F75300EA1CD9 /* HLPushTableViewController.h */,
 				E1F8E6E31CD2F75300EA1CD9 /* HLPushTableViewController.m */,
 			);
-			name = Push;
+			name = PushVC;
 			sourceTree = "<group>";
 		};
 		E1F8E6E61CD302D500EA1CD9 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
+				E10CDF2D1CD1EAF9006BBE47 /* ProductVC */,
+				E1F8E6E51CD2F75D00EA1CD9 /* PushVC */,
 				E1DEDF851CCF5F0C00C11055 /* HLSettingTableViewController.h */,
 				E1DEDF861CCF5F0C00C11055 /* HLSettingTableViewController.m */,
 			);
 			name = SettingVC;
+			sourceTree = "<group>";
+		};
+		E1F8E6EA1CD3084600EA1CD9 /* BasicTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8E6E71CD3030500EA1CD9 /* HLBasicTableViewController.h */,
+				E1F8E6E81CD3030500EA1CD9 /* HLBasicTableViewController.m */,
+			);
+			name = BasicTableViewController;
+			sourceTree = "<group>";
+		};
+		E1F8E6EB1CD30A2500EA1CD9 /* GroupModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE1EB91CD060AE00B4854D /* HLSettingItemGroupModel.h */,
+				E1BE1EBA1CD060AE00B4854D /* HLSettingItemGroupModel.m */,
+			);
+			name = GroupModel;
+			sourceTree = "<group>";
+		};
+		E1F8E6EC1CD30A4E00EA1CD9 /* ItemModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE1EB61CD05FDA00B4854D /* HLSettingItemModel.h */,
+				E1BE1EB71CD05FDA00B4854D /* HLSettingItemModel.m */,
+				E10CDF181CD1A1A9006BBE47 /* HLSettingSwitchItemModel.h */,
+				E10CDF191CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m */,
+				E10CDF151CD1A154006BBE47 /* HLSettingArrowItemModel.h */,
+				E10CDF161CD1A154006BBE47 /* HLSettingArrowItemModel.m */,
+				E1F8E6ED1CD30CD600EA1CD9 /* HLSettingLabeltemModel.h */,
+				E1F8E6EE1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m */,
+			);
+			name = ItemModel;
+			sourceTree = "<group>";
+		};
+		E1F8E6F31CD30D3B00EA1CD9 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8E6F01CD30D3200EA1CD9 /* HLScoreViewController.h */,
+				E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */,
+			);
+			name = Score;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -657,6 +699,7 @@
 			files = (
 				E1F8E6E91CD3030500EA1CD9 /* HLBasicTableViewController.m in Sources */,
 				E10CDF1D1CD1DDDC006BBE47 /* HLTestViewController.m in Sources */,
+				E1F8E6EF1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m in Sources */,
 				E10CDF271CD1E1C2006BBE47 /* MBProgressHUD+MJ.m in Sources */,
 				E10CDF131CD19D16006BBE47 /* HLSettingCell.m in Sources */,
 				E10CDF171CD1A154006BBE47 /* HLSettingArrowItemModel.m in Sources */,
@@ -678,6 +721,7 @@
 				E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */,
 				E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */,
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
+				E1F8E6F21CD30D3200EA1CD9 /* HLScoreViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,
 				E10CDF311CD1FF53006BBE47 /* HLProductModel.m in Sources */,
 			);
