@@ -24,6 +24,7 @@
 
 - (UIImage *)image{
     if (nil == _image) {
+        NSLog(@"%s  -- %@",__func__,self.imageName);
         _image = [UIImage  imageNamed:self.imageName];
     }
     return _image;
@@ -31,6 +32,7 @@
 
 - (UIImage *)selectedImage{
     if (nil == _selectedImage) {
+        NSLog(@"%s-- %@",__func__,self.selectedImageName);
         _selectedImage = [UIImage  imageNamed:self.selectedImageName];
     }
     return _selectedImage;

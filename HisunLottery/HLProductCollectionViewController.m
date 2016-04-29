@@ -85,7 +85,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HLProductCellCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
     // Configure the cell
     [cell setProductModel:self.products[indexPath.row]];
     return cell;
@@ -123,7 +122,7 @@ static NSString * const reuseIdentifier = @"Cell";
 */
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%s",__func__);
+    NSLog(@"%s",__func__);    
 }
 
 

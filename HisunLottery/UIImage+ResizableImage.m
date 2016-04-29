@@ -12,6 +12,7 @@
 
 
 + (UIImage*)resizableImageWithName:(NSString *)name {
+    NSLog(@"%s--%@",__func__,name);
     UIImage *image = [UIImage imageNamed:name];
     //裁剪图片方式一：
     //Creates and returns a new image object with the specified cap values.

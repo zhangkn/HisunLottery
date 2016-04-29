@@ -13,10 +13,12 @@
 
 - (UIImage *)iconImage{
     if (nil == _iconImage) {
+        if (self.icon.length == 0) {//2016-04-29 10:33:43.831 HisunLottery[2555:112906] CUICatalog: Invalid asset name supplied: [UIImage imageNamed:name];但是这个name却是空的，所以就报了这个错了
+            return nil;
+        }
         _iconImage = [UIImage imageNamed:self.icon];
     }
     return _iconImage;
-    
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict{
@@ -42,6 +44,12 @@
 }
 
 + (instancetype)itemModelWithTitle:(NSString *)title icon:(NSString *)icon{
+    if (title.length == 0) {
+        title = @"";
+    }
+    if (icon.length == 0) {
+        icon = @"";
+    }    
     NSDictionary *dict = @{@"title":title,@"icon":icon};
     return [[self alloc]initWithDictionary:dict];
 }

@@ -13,6 +13,7 @@
 
 - (UIImage *)iconImage{
     if (nil == _iconImage) {
+        NSLog(@"%s  -- %@",__func__,self.icon);
         _iconImage = [UIImage imageNamed:self.icon];
     }
     return _iconImage;
