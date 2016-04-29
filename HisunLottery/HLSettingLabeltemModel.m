@@ -7,15 +7,20 @@
 //
 
 #import "HLSettingLabeltemModel.h"
+#import "HLSaveTool.h"
 
 @implementation HLSettingLabeltemModel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)setText:(NSString *)text{
+    _text =text;
+    //存储数据
+    [HLSaveTool setObject:self.text forKey:self.title];
 }
-*/
 
+
+- (void)setTitle:(NSString *)title{//一旦有了title，就存储text
+    [super setTitle:title];
+    //额外动作,获取text，并对text 进行存储
+    self.text = [HLSaveTool objectForKey:title];//从偏好设置获取
+}
 @end

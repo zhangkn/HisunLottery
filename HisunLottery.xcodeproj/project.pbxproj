@@ -45,6 +45,7 @@
 		E1F8E6E91CD3030500EA1CD9 /* HLBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6E81CD3030500EA1CD9 /* HLBasicTableViewController.m */; };
 		E1F8E6EF1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6EE1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m */; };
 		E1F8E6F21CD30D3200EA1CD9 /* HLScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */; };
+		E1F8E6F71CD3451700EA1CD9 /* HLSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6F61CD3451700EA1CD9 /* HLSaveTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,8 @@
 		E1F8E6EE1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSettingLabeltemModel.m; sourceTree = "<group>"; };
 		E1F8E6F01CD30D3200EA1CD9 /* HLScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLScoreViewController.h; sourceTree = "<group>"; };
 		E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLScoreViewController.m; sourceTree = "<group>"; };
+		E1F8E6F51CD3451700EA1CD9 /* HLSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSaveTool.h; sourceTree = "<group>"; };
+		E1F8E6F61CD3451700EA1CD9 /* HLSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSaveTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +475,7 @@
 		E1DEDF801CCF135600C11055 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				E1F8E6F41CD344F700EA1CD9 /* SaveTool */,
 				E1DEDF811CCF13A200C11055 /* UIImage+ResizableImage.h */,
 				E1DEDF821CCF13A200C11055 /* UIImage+ResizableImage.m */,
 			);
@@ -558,6 +562,15 @@
 				E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */,
 			);
 			name = Score;
+			sourceTree = "<group>";
+		};
+		E1F8E6F41CD344F700EA1CD9 /* SaveTool */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8E6F51CD3451700EA1CD9 /* HLSaveTool.h */,
+				E1F8E6F61CD3451700EA1CD9 /* HLSaveTool.m */,
+			);
+			name = SaveTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -705,6 +718,7 @@
 				E10CDF171CD1A154006BBE47 /* HLSettingArrowItemModel.m in Sources */,
 				E101C3921CCDD56500727AC2 /* HLTabBarModel.m in Sources */,
 				E101C3951CCDEBA900727AC2 /* HLButton.m in Sources */,
+				E1F8E6F71CD3451700EA1CD9 /* HLSaveTool.m in Sources */,
 				E1DEDF871CCF5F0C00C11055 /* HLSettingTableViewController.m in Sources */,
 				E10CDF291CD1E1C2006BBE47 /* MBProgressHUD.m in Sources */,
 				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
