@@ -45,15 +45,21 @@
 
 + (NSArray *)list{
     NSMutableArray *tmpArrayM = [NSMutableArray array];
-    //解析plist
+    //解析json字符串
     NSString *path = [[NSBundle mainBundle] pathForResource:@"products.json" ofType:nil];
-    NSData *data = [path dataUsingEncoding:NSUTF8StringEncoding];
-//    NSData *data = [NSData dataWithContentsOfFile:path];
-    NSArray *arrayDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-    for (NSDictionary *dict in  arrayDict) {
-        [tmpArrayM addObject:[self productModelWithDictionary:dict]];
+//    NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSError *error;
+    NSArray *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    if (jsonObject && error == nil) {
+        for (NSDictionary *dict in  jsonObject) {
+            [tmpArrayM addObject:[self productModelWithDictionary:dict]];
+        }
+        return tmpArrayM;
+    } else {
+        return nil;
     }
-    return tmpArrayM;
 }
 
 @end
