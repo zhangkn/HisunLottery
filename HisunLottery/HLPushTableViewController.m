@@ -14,7 +14,6 @@
 
 @interface HLPushTableViewController ()
 
-@property (nonatomic,strong) NSMutableArray *datalist;
 
 @end
 

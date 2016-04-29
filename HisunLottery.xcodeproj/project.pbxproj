@@ -46,6 +46,38 @@
 		E1F8E6EF1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6EE1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m */; };
 		E1F8E6F21CD30D3200EA1CD9 /* HLScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */; };
 		E1F8E6F71CD3451700EA1CD9 /* HLSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6F61CD3451700EA1CD9 /* HLSaveTool.m */; };
+		E1F8E6FB1CD352B600EA1CD9 /* HLHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6FA1CD352B600EA1CD9 /* HLHelpViewController.m */; };
+		E1F8E6FF1CD357BB00EA1CD9 /* HLHtmlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E6FE1CD357BB00EA1CD9 /* HLHtmlModel.m */; };
+		E1F8E7021CD35DBD00EA1CD9 /* HLHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8E7011CD35DBD00EA1CD9 /* HLHtmlViewController.m */; };
+		E1F8E7211CD3622200EA1CD9 /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7041CD3622200EA1CD9 /* bjdc_howto.html */; };
+		E1F8E7221CD3622200EA1CD9 /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7051CD3622200EA1CD9 /* coupon_help.html */; };
+		E1F8E7231CD3622200EA1CD9 /* credit_help.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7061CD3622200EA1CD9 /* credit_help.html */; };
+		E1F8E7241CD3622200EA1CD9 /* dlt_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7071CD3622200EA1CD9 /* dlt_howto.html */; };
+		E1F8E7251CD3622200EA1CD9 /* f9_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7081CD3622200EA1CD9 /* f9_howto.html */; };
+		E1F8E7261CD3622200EA1CD9 /* gdy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7091CD3622200EA1CD9 /* gdy11_howto.html */; };
+		E1F8E7271CD3622200EA1CD9 /* group_record.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E70A1CD3622200EA1CD9 /* group_record.html */; };
+		E1F8E7281CD3622200EA1CD9 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E70B1CD3622200EA1CD9 /* help.html */; };
+		E1F8E7291CD3622200EA1CD9 /* helpGroupBuy.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E70C1CD3622200EA1CD9 /* helpGroupBuy.html */; };
+		E1F8E72A1CD3622200EA1CD9 /* jclq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E70D1CD3622200EA1CD9 /* jclq_howto.html */; };
+		E1F8E72B1CD3622200EA1CD9 /* jczq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E70E1CD3622200EA1CD9 /* jczq_howto.html */; };
+		E1F8E72C1CD3622200EA1CD9 /* jxssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E70F1CD3622200EA1CD9 /* jxssc_howto.html */; };
+		E1F8E72D1CD3622200EA1CD9 /* jxy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7101CD3622200EA1CD9 /* jxy11_howto.html */; };
+		E1F8E72E1CD3622200EA1CD9 /* k2_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7111CD3622200EA1CD9 /* k2_howto.html */; };
+		E1F8E72F1CD3622200EA1CD9 /* k3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7121CD3622200EA1CD9 /* k3_howto.html */; };
+		E1F8E7301CD3622200EA1CD9 /* kl8_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7131CD3622200EA1CD9 /* kl8_howto.html */; };
+		E1F8E7311CD3622200EA1CD9 /* lk11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7141CD3622200EA1CD9 /* lk11_howto.html */; };
+		E1F8E7321CD3622200EA1CD9 /* networkconnectedfailed.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7151CD3622200EA1CD9 /* networkconnectedfailed.html */; };
+		E1F8E7331CD3622200EA1CD9 /* pl3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7161CD3622200EA1CD9 /* pl3_howto.html */; };
+		E1F8E7341CD3622200EA1CD9 /* pl5_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7171CD3622200EA1CD9 /* pl5_howto.html */; };
+		E1F8E7351CD3622200EA1CD9 /* qlc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7181CD3622200EA1CD9 /* qlc_howto.html */; };
+		E1F8E7361CD3622200EA1CD9 /* qxc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7191CD3622200EA1CD9 /* qxc_howto.html */; };
+		E1F8E7371CD3622200EA1CD9 /* rule.css in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71A1CD3622200EA1CD9 /* rule.css */; };
+		E1F8E7381CD3622200EA1CD9 /* sfc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71B1CD3622200EA1CD9 /* sfc_howto.html */; };
+		E1F8E7391CD3622200EA1CD9 /* ssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71C1CD3622200EA1CD9 /* ssc_howto.html */; };
+		E1F8E73A1CD3622200EA1CD9 /* ssq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71D1CD3622200EA1CD9 /* ssq_howto.html */; };
+		E1F8E73B1CD3622200EA1CD9 /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71E1CD3622200EA1CD9 /* x3d_howto.html */; };
+		E1F8E73C1CD3622200EA1CD9 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71F1CD3622200EA1CD9 /* y11_howto.html */; };
+		E1F8E73D1CD3622200EA1CD9 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7201CD3622200EA1CD9 /* znzh.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +171,41 @@
 		E1F8E6F11CD30D3200EA1CD9 /* HLScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLScoreViewController.m; sourceTree = "<group>"; };
 		E1F8E6F51CD3451700EA1CD9 /* HLSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSaveTool.h; sourceTree = "<group>"; };
 		E1F8E6F61CD3451700EA1CD9 /* HLSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSaveTool.m; sourceTree = "<group>"; };
+		E1F8E6F91CD352B600EA1CD9 /* HLHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHelpViewController.h; sourceTree = "<group>"; };
+		E1F8E6FA1CD352B600EA1CD9 /* HLHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLHelpViewController.m; sourceTree = "<group>"; };
+		E1F8E6FD1CD357BB00EA1CD9 /* HLHtmlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHtmlModel.h; sourceTree = "<group>"; };
+		E1F8E6FE1CD357BB00EA1CD9 /* HLHtmlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLHtmlModel.m; sourceTree = "<group>"; };
+		E1F8E7001CD35DBD00EA1CD9 /* HLHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHtmlViewController.h; sourceTree = "<group>"; };
+		E1F8E7011CD35DBD00EA1CD9 /* HLHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLHtmlViewController.m; sourceTree = "<group>"; };
+		E1F8E7041CD3622200EA1CD9 /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
+		E1F8E7051CD3622200EA1CD9 /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
+		E1F8E7061CD3622200EA1CD9 /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
+		E1F8E7071CD3622200EA1CD9 /* dlt_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dlt_howto.html; sourceTree = "<group>"; };
+		E1F8E7081CD3622200EA1CD9 /* f9_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = f9_howto.html; sourceTree = "<group>"; };
+		E1F8E7091CD3622200EA1CD9 /* gdy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gdy11_howto.html; sourceTree = "<group>"; };
+		E1F8E70A1CD3622200EA1CD9 /* group_record.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = group_record.html; sourceTree = "<group>"; };
+		E1F8E70B1CD3622200EA1CD9 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		E1F8E70C1CD3622200EA1CD9 /* helpGroupBuy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = helpGroupBuy.html; sourceTree = "<group>"; };
+		E1F8E70D1CD3622200EA1CD9 /* jclq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jclq_howto.html; sourceTree = "<group>"; };
+		E1F8E70E1CD3622200EA1CD9 /* jczq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jczq_howto.html; sourceTree = "<group>"; };
+		E1F8E70F1CD3622200EA1CD9 /* jxssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxssc_howto.html; sourceTree = "<group>"; };
+		E1F8E7101CD3622200EA1CD9 /* jxy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxy11_howto.html; sourceTree = "<group>"; };
+		E1F8E7111CD3622200EA1CD9 /* k2_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k2_howto.html; sourceTree = "<group>"; };
+		E1F8E7121CD3622200EA1CD9 /* k3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k3_howto.html; sourceTree = "<group>"; };
+		E1F8E7131CD3622200EA1CD9 /* kl8_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kl8_howto.html; sourceTree = "<group>"; };
+		E1F8E7141CD3622200EA1CD9 /* lk11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lk11_howto.html; sourceTree = "<group>"; };
+		E1F8E7151CD3622200EA1CD9 /* networkconnectedfailed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = networkconnectedfailed.html; sourceTree = "<group>"; };
+		E1F8E7161CD3622200EA1CD9 /* pl3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl3_howto.html; sourceTree = "<group>"; };
+		E1F8E7171CD3622200EA1CD9 /* pl5_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl5_howto.html; sourceTree = "<group>"; };
+		E1F8E7181CD3622200EA1CD9 /* qlc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qlc_howto.html; sourceTree = "<group>"; };
+		E1F8E7191CD3622200EA1CD9 /* qxc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qxc_howto.html; sourceTree = "<group>"; };
+		E1F8E71A1CD3622200EA1CD9 /* rule.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = rule.css; sourceTree = "<group>"; };
+		E1F8E71B1CD3622200EA1CD9 /* sfc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sfc_howto.html; sourceTree = "<group>"; };
+		E1F8E71C1CD3622200EA1CD9 /* ssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssc_howto.html; sourceTree = "<group>"; };
+		E1F8E71D1CD3622200EA1CD9 /* ssq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssq_howto.html; sourceTree = "<group>"; };
+		E1F8E71E1CD3622200EA1CD9 /* x3d_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = x3d_howto.html; sourceTree = "<group>"; };
+		E1F8E71F1CD3622200EA1CD9 /* y11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = y11_howto.html; sourceTree = "<group>"; };
+		E1F8E7201CD3622200EA1CD9 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +331,7 @@
 		E10CDF2E1CD1FF27006BBE47 /* SettingItemModel */ = {
 			isa = PBXGroup;
 			children = (
+				E1F8E6FC1CD3578A00EA1CD9 /* HelpModel */,
 				E1F8E6EC1CD30A4E00EA1CD9 /* ItemModel */,
 				E1F8E6EB1CD30A2500EA1CD9 /* GroupModel */,
 			);
@@ -331,6 +399,7 @@
 		E145A5501CCCAC6D00724886 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1F8E7031CD3622200EA1CD9 /* Html */,
 				E10CDF331CD1FFBF006BBE47 /* Data */,
 				E145A5591CCCAC6D00724886 /* Main.storyboard */,
 				E145A55C1CCCAC6D00724886 /* Assets.xcassets */,
@@ -514,6 +583,7 @@
 		E1F8E6E61CD302D500EA1CD9 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
+				E1F8E6F81CD3525400EA1CD9 /* HelpVC */,
 				E10CDF2D1CD1EAF9006BBE47 /* ProductVC */,
 				E1F8E6E51CD2F75D00EA1CD9 /* PushVC */,
 				E1DEDF851CCF5F0C00C11055 /* HLSettingTableViewController.h */,
@@ -571,6 +641,62 @@
 				E1F8E6F61CD3451700EA1CD9 /* HLSaveTool.m */,
 			);
 			name = SaveTool;
+			sourceTree = "<group>";
+		};
+		E1F8E6F81CD3525400EA1CD9 /* HelpVC */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8E6F91CD352B600EA1CD9 /* HLHelpViewController.h */,
+				E1F8E6FA1CD352B600EA1CD9 /* HLHelpViewController.m */,
+				E1F8E7001CD35DBD00EA1CD9 /* HLHtmlViewController.h */,
+				E1F8E7011CD35DBD00EA1CD9 /* HLHtmlViewController.m */,
+			);
+			name = HelpVC;
+			sourceTree = "<group>";
+		};
+		E1F8E6FC1CD3578A00EA1CD9 /* HelpModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8E6FD1CD357BB00EA1CD9 /* HLHtmlModel.h */,
+				E1F8E6FE1CD357BB00EA1CD9 /* HLHtmlModel.m */,
+			);
+			name = HelpModel;
+			sourceTree = "<group>";
+		};
+		E1F8E7031CD3622200EA1CD9 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8E7041CD3622200EA1CD9 /* bjdc_howto.html */,
+				E1F8E7051CD3622200EA1CD9 /* coupon_help.html */,
+				E1F8E7061CD3622200EA1CD9 /* credit_help.html */,
+				E1F8E7071CD3622200EA1CD9 /* dlt_howto.html */,
+				E1F8E7081CD3622200EA1CD9 /* f9_howto.html */,
+				E1F8E7091CD3622200EA1CD9 /* gdy11_howto.html */,
+				E1F8E70A1CD3622200EA1CD9 /* group_record.html */,
+				E1F8E70B1CD3622200EA1CD9 /* help.html */,
+				E1F8E70C1CD3622200EA1CD9 /* helpGroupBuy.html */,
+				E1F8E70D1CD3622200EA1CD9 /* jclq_howto.html */,
+				E1F8E70E1CD3622200EA1CD9 /* jczq_howto.html */,
+				E1F8E70F1CD3622200EA1CD9 /* jxssc_howto.html */,
+				E1F8E7101CD3622200EA1CD9 /* jxy11_howto.html */,
+				E1F8E7111CD3622200EA1CD9 /* k2_howto.html */,
+				E1F8E7121CD3622200EA1CD9 /* k3_howto.html */,
+				E1F8E7131CD3622200EA1CD9 /* kl8_howto.html */,
+				E1F8E7141CD3622200EA1CD9 /* lk11_howto.html */,
+				E1F8E7151CD3622200EA1CD9 /* networkconnectedfailed.html */,
+				E1F8E7161CD3622200EA1CD9 /* pl3_howto.html */,
+				E1F8E7171CD3622200EA1CD9 /* pl5_howto.html */,
+				E1F8E7181CD3622200EA1CD9 /* qlc_howto.html */,
+				E1F8E7191CD3622200EA1CD9 /* qxc_howto.html */,
+				E1F8E71A1CD3622200EA1CD9 /* rule.css */,
+				E1F8E71B1CD3622200EA1CD9 /* sfc_howto.html */,
+				E1F8E71C1CD3622200EA1CD9 /* ssc_howto.html */,
+				E1F8E71D1CD3622200EA1CD9 /* ssq_howto.html */,
+				E1F8E71E1CD3622200EA1CD9 /* x3d_howto.html */,
+				E1F8E71F1CD3622200EA1CD9 /* y11_howto.html */,
+				E1F8E7201CD3622200EA1CD9 /* znzh.html */,
+			);
+			path = Html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -677,15 +803,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F8E7291CD3622200EA1CD9 /* helpGroupBuy.html in Resources */,
+				E1F8E72E1CD3622200EA1CD9 /* k2_howto.html in Resources */,
+				E1F8E7321CD3622200EA1CD9 /* networkconnectedfailed.html in Resources */,
 				E10CDF371CD1FFBF006BBE47 /* cywt.json in Resources */,
+				E1F8E73C1CD3622200EA1CD9 /* y11_howto.html in Resources */,
 				E10CDF1F1CD1DDEC006BBE47 /* HLTestViewController.xib in Resources */,
+				E1F8E73D1CD3622200EA1CD9 /* znzh.html in Resources */,
 				E145A5601CCCAC6D00724886 /* LaunchScreen.storyboard in Resources */,
+				E1F8E7391CD3622200EA1CD9 /* ssc_howto.html in Resources */,
 				E1F8E6E01CD2F0A100EA1CD9 /* products.json in Resources */,
 				E10CDF281CD1E1C2006BBE47 /* MBProgressHUD.bundle in Resources */,
+				E1F8E7301CD3622200EA1CD9 /* kl8_howto.html in Resources */,
+				E1F8E7281CD3622200EA1CD9 /* help.html in Resources */,
+				E1F8E7251CD3622200EA1CD9 /* f9_howto.html in Resources */,
 				E145A55D1CCCAC6D00724886 /* Assets.xcassets in Resources */,
+				E1F8E7331CD3622200EA1CD9 /* pl3_howto.html in Resources */,
+				E1F8E7381CD3622200EA1CD9 /* sfc_howto.html in Resources */,
+				E1F8E7231CD3622200EA1CD9 /* credit_help.html in Resources */,
+				E1F8E73B1CD3622200EA1CD9 /* x3d_howto.html in Resources */,
+				E1F8E72B1CD3622200EA1CD9 /* jczq_howto.html in Resources */,
+				E1F8E7341CD3622200EA1CD9 /* pl5_howto.html in Resources */,
+				E1F8E7241CD3622200EA1CD9 /* dlt_howto.html in Resources */,
+				E1F8E7351CD3622200EA1CD9 /* qlc_howto.html in Resources */,
 				E145A55B1CCCAC6D00724886 /* Main.storyboard in Resources */,
+				E1F8E7311CD3622200EA1CD9 /* lk11_howto.html in Resources */,
 				E10CDF381CD1FFBF006BBE47 /* help.json in Resources */,
+				E1F8E73A1CD3622200EA1CD9 /* ssq_howto.html in Resources */,
+				E1F8E7261CD3622200EA1CD9 /* gdy11_howto.html in Resources */,
+				E1F8E7221CD3622200EA1CD9 /* coupon_help.html in Resources */,
+				E1F8E7371CD3622200EA1CD9 /* rule.css in Resources */,
 				E10CDF3E1CD20440006BBE47 /* HLProductCellCollectionViewCell.xib in Resources */,
+				E1F8E7211CD3622200EA1CD9 /* bjdc_howto.html in Resources */,
+				E1F8E7361CD3622200EA1CD9 /* qxc_howto.html in Resources */,
+				E1F8E72D1CD3622200EA1CD9 /* jxy11_howto.html in Resources */,
+				E1F8E7271CD3622200EA1CD9 /* group_record.html in Resources */,
+				E1F8E72C1CD3622200EA1CD9 /* jxssc_howto.html in Resources */,
+				E1F8E72F1CD3622200EA1CD9 /* k3_howto.html in Resources */,
+				E1F8E72A1CD3622200EA1CD9 /* jclq_howto.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +867,7 @@
 			files = (
 				E1F8E6E91CD3030500EA1CD9 /* HLBasicTableViewController.m in Sources */,
 				E10CDF1D1CD1DDDC006BBE47 /* HLTestViewController.m in Sources */,
+				E1F8E7021CD35DBD00EA1CD9 /* HLHtmlViewController.m in Sources */,
 				E1F8E6EF1CD30CD600EA1CD9 /* HLSettingLabeltemModel.m in Sources */,
 				E10CDF271CD1E1C2006BBE47 /* MBProgressHUD+MJ.m in Sources */,
 				E10CDF131CD19D16006BBE47 /* HLSettingCell.m in Sources */,
@@ -721,6 +877,7 @@
 				E1F8E6F71CD3451700EA1CD9 /* HLSaveTool.m in Sources */,
 				E1DEDF871CCF5F0C00C11055 /* HLSettingTableViewController.m in Sources */,
 				E10CDF291CD1E1C2006BBE47 /* MBProgressHUD.m in Sources */,
+				E1F8E6FB1CD352B600EA1CD9 /* HLHelpViewController.m in Sources */,
 				E101C38D1CCDAB8C00727AC2 /* HLTabBar.m in Sources */,
 				E10CDF1A1CD1A1A9006BBE47 /* HLSettingSwitchItemModel.m in Sources */,
 				E101C39D1CCDF7E700727AC2 /* HLNavigationController.m in Sources */,
@@ -737,6 +894,7 @@
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
 				E1F8E6F21CD30D3200EA1CD9 /* HLScoreViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,
+				E1F8E6FF1CD357BB00EA1CD9 /* HLHtmlModel.m in Sources */,
 				E10CDF311CD1FF53006BBE47 /* HLProductModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
