@@ -26,6 +26,8 @@
 - (void)addGroup0{
     HLSettingItemGroupModel *group = [[HLSettingItemGroupModel alloc]init];
     HLSettingArrowItemModel *sinaItem = [HLSettingArrowItemModel itemModelWithTitle:@"新浪分享" icon:@"WeiboSina" destVCClass:nil];
+    
+    
     HLSettingArrowItemModel *smsItem = [HLSettingArrowItemModel itemModelWithTitle:@"短信分享" icon:@"SmsShare" destVCClass:nil];
     //短信分享
     [smsItem setOptionBlock:^{
@@ -44,6 +46,39 @@
     
     }];
     HLSettingArrowItemModel *mailItem = [HLSettingArrowItemModel itemModelWithTitle:@"邮件分享" icon:@"MailShare" destVCClass:nil];
+    //邮件分享
+    [mailItem setOptionBlock:^{
+        //1）方法一：用自带的邮件客户端--缺点：发完邮件后不会自动返回原界面
+//        [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"mailto://zhang_kn@icloud.com"]];
+        
+        if (![MFMailComposeViewController canSendMail]) {//whether the current device is able to send email.
+            return ;
+        }
+        //2）方法二： MFMailComposeViewController
+        MFMailComposeViewController *mailVC =[[MFMailComposeViewController alloc]init];
+        //设置邮件
+        [mailVC setSubject:@"邮件主题:test:---------"];
+        //设置邮件内容
+        [mailVC setMessageBody:@"邮件内容: test------" isHTML:NO];
+        //设置收件人列表
+        [mailVC setToRecipients:@[@"zang_kn@icloud.com",@"hang_kn@hisuntech.com"]];
+        //设置抄送列表
+        [mailVC setCcRecipients:@[@"84924492@qq.com",@"hang_kn@hisuntech.com"]];
+        //设置密送列表
+        [mailVC setBccRecipients:@[@"94934863@qq.com",@"90977255@qq.com"]];
+        //添加附件--Adds the specified data as an attachment to the message.
+        UIImage *image = [UIImage imageNamed:@"about_logo"];
+        NSData *date = UIImagePNGRepresentation(image);//Returns the data for the specified image in PNG format
+        /**
+         The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be nil.
+         */
+        [mailVC addAttachmentData:date mimeType:@"image/png" fileName:@"test.png"];
+        //设置代理
+        [mailVC setMailComposeDelegate:self];
+        [self presentViewController:mailVC animated:YES completion:nil];
+
+    }];
+
     group.items = @[sinaItem,smsItem,mailItem];
     [self.dataList addObject:group];
 }
@@ -73,5 +108,33 @@
             }
     }];
 }
+#pragma mark - MFMailComposeViewControllerDelegate 监听didFinishWithResult,进行关闭邮件界面
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
+    /*enum MFMailComposeResult {
+        MFMailComposeResultCancelled,
+        MFMailComposeResultSaved,
+        MFMailComposeResultSent,
+        MFMailComposeResultFailed
+    };*/
+    [controller dismissViewControllerAnimated:YES completion:^{
+        switch (result) {
+            case MFMailComposeResultCancelled:
+                NSLog(@"%@",@"发送取消");
+                break;
+            case MFMailComposeResultFailed:
+                NSLog(@"%@",@"发送失败");
+                break;
+            case MFMailComposeResultSent:
+                NSLog(@"%@",@"发送成功");
+                break;
+            case MFMailComposeResultSaved:
+                NSLog(@"%@",@"MFMailComposeResultSaved");//发送取消,并选择了save Draft
+                break;
+        }
+    }];
+    
+}
+
+
 
 @end

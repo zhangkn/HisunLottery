@@ -122,7 +122,15 @@ static NSString * const reuseIdentifier = @"Cell";
 */
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%s",__func__);    
+    //获取模型
+    HLProductModel *model = self.products[indexPath.item];
+    NSString *urlStr = [NSString stringWithFormat:@"%@://%@",model.customUrl,model.ID];
+    NSURL *url = [NSURL URLWithString:urlStr];
+    UIApplication *app = [UIApplication sharedApplication];
+    if (![app canOpenURL:url]) {//2016-04-30 17:39:03.355 HisunLottery[932:417803] -canOpenURL: failed for URL: "newsapp://com.netease.news" - error: "This app is not allowed to query for scheme newsapp"
+        url =[NSURL URLWithString:model.url];//跳转到appstore的URL
+    }
+    [app openURL:url];
 }
 
 
