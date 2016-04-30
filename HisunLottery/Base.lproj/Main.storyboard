@@ -201,9 +201,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-tB-5zN">
-                                <rect key="frame" x="10" y="220" width="300" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4F-tB-5zN">
+                                <rect key="frame" x="22" y="220" width="296" height="40"/>
                                 <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dcq-XD-BIH"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.5" minY="0.5" maxX="0.5" maxY="0.5"/>
                                 <state key="normal" title="登录"/>
                             </button>
@@ -219,6 +222,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="YCz-a7-Ceu" secondAttribute="trailing" constant="-10" id="1yK-aK-fPc"/>
                             <constraint firstItem="YCz-a7-Ceu" firstAttribute="top" secondItem="u7e-Bi-14G" secondAttribute="bottom" id="AeH-S7-Ofy"/>
                             <constraint firstItem="YCz-a7-Ceu" firstAttribute="leading" secondItem="Kcy-JY-Mf8" secondAttribute="leadingMargin" constant="-10" id="X8y-Ch-q9l"/>
+                            <constraint firstItem="X4F-tB-5zN" firstAttribute="top" secondItem="YCz-a7-Ceu" secondAttribute="bottom" constant="80" id="j1b-mH-caq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X4F-tB-5zN" secondAttribute="trailing" constant="-14" id="k1c-VO-qGF"/>
+                            <constraint firstItem="X4F-tB-5zN" firstAttribute="leading" secondItem="Kcy-JY-Mf8" secondAttribute="leadingMargin" constant="6" id="qmp-Nv-scP"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>

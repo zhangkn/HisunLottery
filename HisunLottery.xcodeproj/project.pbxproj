@@ -335,7 +335,6 @@
 			children = (
 				E10CDF2A1CD1EAF4006BBE47 /* HLProductCollectionViewController.h */,
 				E10CDF2B1CD1EAF4006BBE47 /* HLProductCollectionViewController.m */,
-				E1F8E6F31CD30D3B00EA1CD9 /* Score */,
 			);
 			name = ProductVC;
 			sourceTree = "<group>";
@@ -588,6 +587,7 @@
 			children = (
 				E1F8E6E21CD2F75300EA1CD9 /* HLPushTableViewController.h */,
 				E1F8E6E31CD2F75300EA1CD9 /* HLPushTableViewController.m */,
+				E1F8E6F31CD30D3B00EA1CD9 /* Score */,
 			);
 			name = PushVC;
 			sourceTree = "<group>";
@@ -1085,8 +1085,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang_kn@icloud.com (X89C52XQPT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang_kn@icloud.com (X89C52XQPT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HisunLottery/HisunLottery-Prefix.pch";
 				INFOPLIST_FILE = HisunLottery/Info.plist;
@@ -1104,8 +1104,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang_kn@icloud.com (X89C52XQPT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang_kn@icloud.com (X89C52XQPT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HisunLottery/HisunLottery-Prefix.pch";
 				INFOPLIST_FILE = HisunLottery/Info.plist;

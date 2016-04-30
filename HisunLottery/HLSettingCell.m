@@ -17,11 +17,27 @@
 @property (nonatomic,strong) UIImageView *accessoryDisclosureIndicatorView;
 //label 属性
 @property (nonatomic,strong) UILabel *label;
+@property (nonatomic,weak) UIView *dividerView;//分隔线
+
+
 
 
 @end
 
 @implementation HLSettingCell
+
+- (UIView *)dividerView{
+    if (nil == _dividerView) {
+        if (!IOS7) {
+            UIView *tmpView = [[UIView alloc]init];
+            [tmpView setAlpha:0.2];
+            [tmpView setBackgroundColor:[UIColor blackColor]];
+            _dividerView = tmpView;
+            [self.contentView addSubview:_dividerView];
+        }
+    }
+    return _dividerView;
+}
 
 - (UILabel *)label{
     if (nil == _label) {
@@ -107,6 +123,64 @@
     return cell;
 }
 
+#pragma mark - 适配代码
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        //设置一次性属性(适配IOS6，IOS7)
+        //设置背景视图
+        [self setUpBG];
+        //设置子视图
+        [self setUpSubViews];
+    }
+    return self;
+    
+}
+
+- (void)setUpBG{
+    UIView * bGView = [[UIView alloc]init];
+    [bGView setBackgroundColor:[UIColor whiteColor]];
+    self.selectedBackgroundView = bGView;
+
+    UIView * selectedBGView = [[UIView alloc]init];
+    [selectedBGView setBackgroundColor:ILColor(237, 233, 218)];
+    self.selectedBackgroundView = selectedBGView;
+    
+}
+
+- (void)setUpSubViews{
+    [self.textLabel setBackgroundColor:nil];
+    [self.detailTextLabel setBackgroundColor:nil];
+
+}
+
+- (void)setFrame:(CGRect)frame{
+    //拉伸iOS6系统的cell大小，以达到contentView 覆盖整个屏幕
+    if (!IOS7) {
+        frame.size.width += 20;
+        frame.origin.x -= 10;
+    }
+    [super setFrame:frame];
+}
+
+/** 设置分隔线*/
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    if (IOS7) {
+        return;
+    }
+    CGFloat dividerX = self.textLabel.frame.origin.x;
+    CGFloat dividery = 0;
+    CGFloat dividerW = self.contentView.bounds.size.width;
+    CGFloat dividerH = 1;
+    [self.dividerView setFrame:CGRectMake(dividerX, dividery, dividerW, dividerH)];
+
+}
+
+- (void)setIndexPath:(NSIndexPath *)indexPath{
+    _indexPath = indexPath;
+    [self.dividerView setHidden:(indexPath.row ==0)];
+}
 
 
 
