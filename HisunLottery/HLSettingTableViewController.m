@@ -17,6 +17,8 @@
 #import "HLProductCollectionViewController.h"
 #import "HLPushTableViewController.h"
 #import "HLHelpViewController.h"
+#import "HLShareViewController.h"
+#import "HLAboutViewController.h"
 @interface HLSettingTableViewController ()
 
 
@@ -73,10 +75,10 @@
         
     }];
     HLSettingArrowItemModel *moreHelpDictItem = [HLSettingArrowItemModel itemModelWithTitle:@"帮助" icon:@"MoreHelp" destVCClass:[HLHelpViewController class]];
-    HLSettingArrowItemModel *moreShareItem = [HLSettingArrowItemModel itemModelWithTitle:@"分享" icon:@"MoreShare" destVCClass:[HLTestViewController class]];
+    HLSettingArrowItemModel *moreShareItem = [HLSettingArrowItemModel itemModelWithTitle:@"分享" icon:@"MoreShare" destVCClass:[HLShareViewController class]];
     HLSettingArrowItemModel *moreMessageItem = [HLSettingArrowItemModel itemModelWithTitle:@"查看消息" icon:@"MoreMessage" destVCClass:[HLTestViewController class]];
     HLSettingArrowItemModel *moreNeteaseItem = [HLSettingArrowItemModel itemModelWithTitle:@"产品推荐" icon:@"MoreNetease" destVCClass:[HLProductCollectionViewController class]];
-    HLSettingArrowItemModel *moreAboutItem = [HLSettingArrowItemModel itemModelWithTitle:@"关于" icon:@"MoreAbout" destVCClass:[HLTestViewController class]];
+    HLSettingArrowItemModel *moreAboutItem = [HLSettingArrowItemModel itemModelWithTitle:@"关于" icon:@"MoreAbout" destVCClass:[HLAboutViewController class]];
     
     group1.items = @[moreUpdateItem,moreHelpDictItem,moreShareItem,moreMessageItem,moreNeteaseItem,moreAboutItem];
     [self.dataList addObject:group1];

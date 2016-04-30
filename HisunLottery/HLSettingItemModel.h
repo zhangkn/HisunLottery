@@ -17,6 +17,7 @@ typedef void(^HLSettingItemModelOptionBlock)();
 @property (nonatomic,strong,readonly) UIImage *iconImage;
 
 @property (nonatomic,copy) HLSettingItemModelOptionBlock optionBlock;
+@property (nonatomic,copy) NSString *subTitle;
 
 
 /**

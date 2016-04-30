@@ -78,6 +78,10 @@
 		E1F8E73B1CD3622200EA1CD9 /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71E1CD3622200EA1CD9 /* x3d_howto.html */; };
 		E1F8E73C1CD3622200EA1CD9 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E71F1CD3622200EA1CD9 /* y11_howto.html */; };
 		E1F8E73D1CD3622200EA1CD9 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = E1F8E7201CD3622200EA1CD9 /* znzh.html */; };
+		E1FEA2231CD43B91004073C7 /* HLShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FEA2221CD43B91004073C7 /* HLShareViewController.m */; };
+		E1FEA2271CD43FA1004073C7 /* HLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FEA2261CD43FA1004073C7 /* HLAboutViewController.m */; };
+		E1FEA22B1CD4423F004073C7 /* HLAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FEA22A1CD4423F004073C7 /* HLAboutHeaderView.m */; };
+		E1FEA22D1CD4424E004073C7 /* HLAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FEA22C1CD4424E004073C7 /* HLAboutHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +210,13 @@
 		E1F8E71E1CD3622200EA1CD9 /* x3d_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = x3d_howto.html; sourceTree = "<group>"; };
 		E1F8E71F1CD3622200EA1CD9 /* y11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = y11_howto.html; sourceTree = "<group>"; };
 		E1F8E7201CD3622200EA1CD9 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
+		E1FEA2211CD43B91004073C7 /* HLShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLShareViewController.h; sourceTree = "<group>"; };
+		E1FEA2221CD43B91004073C7 /* HLShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLShareViewController.m; sourceTree = "<group>"; };
+		E1FEA2251CD43FA1004073C7 /* HLAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAboutViewController.h; sourceTree = "<group>"; };
+		E1FEA2261CD43FA1004073C7 /* HLAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAboutViewController.m; sourceTree = "<group>"; };
+		E1FEA2291CD4423F004073C7 /* HLAboutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAboutHeaderView.h; sourceTree = "<group>"; };
+		E1FEA22A1CD4423F004073C7 /* HLAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAboutHeaderView.m; sourceTree = "<group>"; };
+		E1FEA22C1CD4424E004073C7 /* HLAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLAboutHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +302,7 @@
 		E10CDF141CD19D1C006BBE47 /* View  */ = {
 			isa = PBXGroup;
 			children = (
+				E1FEA2281CD4417C004073C7 /* AboutView */,
 				E10CDF111CD19D16006BBE47 /* HLSettingCell.h */,
 				E10CDF3F1CD204FB006BBE47 /* ProductsView */,
 				E10CDF121CD19D16006BBE47 /* HLSettingCell.m */,
@@ -583,6 +595,8 @@
 		E1F8E6E61CD302D500EA1CD9 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
+				E1FEA2241CD43F83004073C7 /* AboutVC */,
+				E1FEA2201CD43B78004073C7 /* ShareVC */,
 				E1F8E6F81CD3525400EA1CD9 /* HelpVC */,
 				E10CDF2D1CD1EAF9006BBE47 /* ProductVC */,
 				E1F8E6E51CD2F75D00EA1CD9 /* PushVC */,
@@ -697,6 +711,34 @@
 				E1F8E7201CD3622200EA1CD9 /* znzh.html */,
 			);
 			path = Html;
+			sourceTree = "<group>";
+		};
+		E1FEA2201CD43B78004073C7 /* ShareVC */ = {
+			isa = PBXGroup;
+			children = (
+				E1FEA2211CD43B91004073C7 /* HLShareViewController.h */,
+				E1FEA2221CD43B91004073C7 /* HLShareViewController.m */,
+			);
+			name = ShareVC;
+			sourceTree = "<group>";
+		};
+		E1FEA2241CD43F83004073C7 /* AboutVC */ = {
+			isa = PBXGroup;
+			children = (
+				E1FEA2251CD43FA1004073C7 /* HLAboutViewController.h */,
+				E1FEA2261CD43FA1004073C7 /* HLAboutViewController.m */,
+			);
+			name = AboutVC;
+			sourceTree = "<group>";
+		};
+		E1FEA2281CD4417C004073C7 /* AboutView */ = {
+			isa = PBXGroup;
+			children = (
+				E1FEA2291CD4423F004073C7 /* HLAboutHeaderView.h */,
+				E1FEA22C1CD4424E004073C7 /* HLAboutHeaderView.xib */,
+				E1FEA22A1CD4423F004073C7 /* HLAboutHeaderView.m */,
+			);
+			name = AboutView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -828,6 +870,7 @@
 				E1F8E7351CD3622200EA1CD9 /* qlc_howto.html in Resources */,
 				E145A55B1CCCAC6D00724886 /* Main.storyboard in Resources */,
 				E1F8E7311CD3622200EA1CD9 /* lk11_howto.html in Resources */,
+				E1FEA22D1CD4424E004073C7 /* HLAboutHeaderView.xib in Resources */,
 				E10CDF381CD1FFBF006BBE47 /* help.json in Resources */,
 				E1F8E73A1CD3622200EA1CD9 /* ssq_howto.html in Resources */,
 				E1F8E7261CD3622200EA1CD9 /* gdy11_howto.html in Resources */,
@@ -884,16 +927,19 @@
 				E1DEDF831CCF13A200C11055 /* UIImage+ResizableImage.m in Sources */,
 				E10CDF3D1CD20440006BBE47 /* HLProductCellCollectionViewCell.m in Sources */,
 				E10CDF2C1CD1EAF4006BBE47 /* HLProductCollectionViewController.m in Sources */,
+				E1FEA2271CD43FA1004073C7 /* HLAboutViewController.m in Sources */,
 				E145A5551CCCAC6D00724886 /* AppDelegate.m in Sources */,
 				E1BE1EBB1CD060AE00B4854D /* HLSettingItemGroupModel.m in Sources */,
 				E101C39A1CCDEF1000727AC2 /* HLHallViewController.m in Sources */,
 				E1F8E6E41CD2F75300EA1CD9 /* HLPushTableViewController.m in Sources */,
 				E1BE1EB81CD05FDA00B4854D /* HLSettingItemModel.m in Sources */,
+				E1FEA2231CD43B91004073C7 /* HLShareViewController.m in Sources */,
 				E1DEDF7E1CCF084D00C11055 /* HLLoginViewController.m in Sources */,
 				E101C3A11CCE19C900727AC2 /* HLTitleButton.m in Sources */,
 				E101C3891CCDAB6200727AC2 /* HLTabBarViewController.m in Sources */,
 				E1F8E6F21CD30D3200EA1CD9 /* HLScoreViewController.m in Sources */,
 				E145A5521CCCAC6D00724886 /* main.m in Sources */,
+				E1FEA22B1CD4423F004073C7 /* HLAboutHeaderView.m in Sources */,
 				E1F8E6FF1CD357BB00EA1CD9 /* HLHtmlModel.m in Sources */,
 				E10CDF311CD1FF53006BBE47 /* HLProductModel.m in Sources */,
 			);

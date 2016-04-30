@@ -62,12 +62,14 @@
     
 }
 
-
+//设置cell显示内容
 - (void) setUpData{
     [self.textLabel setText:self.itemModel.title];
     [self.imageView setImage:self.itemModel.iconImage];
+    [self.detailTextLabel setText:self.itemModel.subTitle];
 }
 
+/** 设置辅助试图*/
 - (void) settingAccessoryView{
     if ([self.itemModel isKindOfClass: [HLSettingArrowItemModel class]]) {
         [self setAccessoryView:self.accessoryDisclosureIndicatorView];
@@ -100,7 +102,7 @@
     NSString *identifier = @"HLSettingCell";
     HLSettingCell *cell = [tableVIew dequeueReusableCellWithIdentifier:identifier];
     if (nil == cell) {
-        cell = [[HLSettingCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[HLSettingCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
     return cell;
 }
