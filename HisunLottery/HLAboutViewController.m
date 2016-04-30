@@ -34,6 +34,7 @@
 }
 
 - (void)addGroup0{
+    __weak HLAboutViewController *aboutVC = self;
     HLSettingItemGroupModel *group = [[HLSettingItemGroupModel alloc]init];
     HLSettingArrowItemModel *scoreItem = [HLSettingArrowItemModel itemModelWithTitle:@"评分支持" icon:@"" destVCClass:nil];
     //跳转到App Store评分
@@ -52,7 +53,7 @@
         //方式三：创建一个UIWebView来加载URL，拨完号之后能自动回到原界面
         NSURL *url = [NSURL URLWithString:@"tel:1887405487"];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        [self.webView loadRequest:request];
+        [aboutVC.webView loadRequest:request];
         
     }];
     [group setItems:@[scoreItem,telItem]];
@@ -64,6 +65,11 @@
     return 10;
 }
 #endif
+
+-(void)dealloc{
+    NSLog(@"%s",__func__);
+}
+    
 
 
 @end

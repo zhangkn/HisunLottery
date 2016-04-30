@@ -29,9 +29,10 @@
         /**
          定义展示键盘的block
          */
+        __weak HLBasicTableViewController *basicVC = self;
         [labelModel setOptionBlock:^{
             UITextField *tmpTextField = [[UITextField alloc]init];
-            [self.view addSubview:tmpTextField];
+            [basicVC.view addSubview:tmpTextField];
             //设置键盘类型
             UIDatePicker *datePicker = [[UIDatePicker alloc]init];
             [datePicker setDatePickerMode:UIDatePickerModeTime];
@@ -44,7 +45,7 @@
             [datePicker setDate:date animated:YES];
             [tmpTextField setInputView:datePicker];
             //监听事件滚动
-            [datePicker addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
+            [datePicker addTarget:basicVC action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
             //展示日期键盘
             [tmpTextField becomeFirstResponder];
             
@@ -101,5 +102,8 @@
 }
 
 
+- (void)dealloc{
+    NSLog(@"%s",__func__);
+}
 
 @end

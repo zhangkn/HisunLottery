@@ -10,8 +10,9 @@
 #import "HLSettingItemGroupModel.h"
 #import "HLSettingArrowItemModel.h"
 #import <MessageUI/MessageUI.h>
+#import "UMSocial.h"
 
-@interface HLShareViewController ()<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate>
+@interface HLShareViewController ()<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate,UMSocialUIDelegate>
 
 @end
 
@@ -24,10 +25,25 @@
 }
 
 - (void)addGroup0{
+    //        1.弱引用成员变量或者控制器本事，防止block的循环引用
+    __weak HLShareViewController *share = self;
     HLSettingItemGroupModel *group = [[HLSettingItemGroupModel alloc]init];
     HLSettingArrowItemModel *sinaItem = [HLSettingArrowItemModel itemModelWithTitle:@"新浪分享" icon:@"WeiboSina" destVCClass:nil];
-    
-    
+    //新浪分享
+    [sinaItem setOptionBlock:^{        
+//        [UMSocialSnsService presentSnsIconSheetView:share
+//                                             appKey:@"57249011e0f55a7e6e000cec"
+//                                          shareText:@"你要分享的文字---kevin"
+//                                         shareImage:[UIImage imageNamed:@"about_logo"]
+//                                    shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,nil]
+//                                           delegate:share];
+        
+        [[UMSocialDataService defaultDataService]  postSNSWithTypes:@[UMShareToSina] content:@"分享内嵌文字" image:nil location:nil urlResource:nil presentedController:share completion:^(UMSocialResponseEntity *response){
+            if (response.responseCode == UMSResponseCodeSuccess) {
+                NSLog(@"分享成功！");
+            }
+        }];
+    }];
     HLSettingArrowItemModel *smsItem = [HLSettingArrowItemModel itemModelWithTitle:@"短信分享" icon:@"SmsShare" destVCClass:nil];
     //短信分享
     [smsItem setOptionBlock:^{
@@ -40,9 +56,11 @@
         // 设置收件人列表
         vc.recipients = @[@"1887405", @"487"];
         // 设置代理
-        vc.messageComposeDelegate = self;
+        vc.messageComposeDelegate = share;
         // 显示控制器
-        [self presentViewController:vc animated:YES completion:nil];
+        if (vc) {
+            [share presentViewController:vc animated:YES completion:nil];//真机调试
+        }
     
     }];
     HLSettingArrowItemModel *mailItem = [HLSettingArrowItemModel itemModelWithTitle:@"邮件分享" icon:@"MailShare" destVCClass:nil];
@@ -74,8 +92,8 @@
          */
         [mailVC addAttachmentData:date mimeType:@"image/png" fileName:@"test.png"];
         //设置代理
-        [mailVC setMailComposeDelegate:self];
-        [self presentViewController:mailVC animated:YES completion:nil];
+        [mailVC setMailComposeDelegate:share];
+        [share presentViewController:mailVC animated:YES completion:nil];
 
     }];
 
@@ -136,5 +154,21 @@
 }
 
 
+- (void)dealloc{
+    NSLog(@"%s",__func__);
+}
+
+
+#pragma mark - UMSocialUIDelegate 监听didFinishWithResult,进行关闭邮件界面
+/** http://dev.umeng.com/social/ios/detail-share*/
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response{
+    NSLog(@"%s",__func__);
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的微博平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
+}
 
 @end

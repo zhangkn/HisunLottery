@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UMSocial.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    [UMSocialData setAppKey:@"57249011e0f55a7e6e000cec"];
     return YES;
 }
 
