@@ -35,7 +35,17 @@
      
      @interface UIView : UIResponder < UIAppearance>
      */
-    UINavigationBar *navigationBar =[UINavigationBar appearance];//获取所有导航条外观
+    //方式一：获取全局外观
+//    UINavigationBar *navigationBar =[UINavigationBar appearance];//获取所有导航条外观
+    //方式二：获取我们自己导航控制器的导航条－－ 确保系统的其它功能（短信）的导航条与自己的冲突，尤其在短信分享这方面要注意
+    UINavigationBar *navigationBar;
+    if (IOS9) {
+        //9.0的API
+        navigationBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[HLNavigationController class]]];
+    }else{
+        navigationBar = [UINavigationBar appearanceWhenContainedIn:[HLNavigationController class],nil];
+    }
+    
     /**
      导航栏背景的出图规格
      iOS6导航栏背景的出图规格

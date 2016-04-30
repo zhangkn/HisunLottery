@@ -143,7 +143,7 @@
     self.selectedBackgroundView = bGView;
 
     UIView * selectedBGView = [[UIView alloc]init];
-    [selectedBGView setBackgroundColor:ILColor(237, 233, 218)];
+    [selectedBGView setBackgroundColor:HLColor(237, 233, 218)];
     self.selectedBackgroundView = selectedBGView;
     
 }

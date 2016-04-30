@@ -32,7 +32,9 @@
 
 
 #define IOS7 [UIDevice  currentDevice].systemVersion.floatValue>=7.0
-#define ILColor(r,g,b) ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0])
+#define IOS9 [UIDevice  currentDevice].systemVersion.floatValue>=9.0
+
+#define HLColor(r,g,b) ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0])
 
 
 #endif

@@ -96,7 +96,7 @@
 #pragma mark - 适配代码
 - (void)viewDidLoad{
     [self.tableView setBackgroundView:nil];//IOS6的优先级 setBackgroundView》setBackgroundColor
-    [self.tableView setBackgroundColor:ILColor(244, 243, 241)];
+    [self.tableView setBackgroundColor:HLColor(244, 243, 241)];
     //设置分组的头部和尾部高度
     [self.tableView setSectionFooterHeight:0];
     [self.tableView setSectionHeaderHeight:20];
