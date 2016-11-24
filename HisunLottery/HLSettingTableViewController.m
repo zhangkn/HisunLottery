@@ -61,7 +61,7 @@
     //第二组模型构建
     HLSettingItemGroupModel *group1 = [[HLSettingItemGroupModel alloc]init];
     HLSettingArrowItemModel *moreUpdateItem = [HLSettingArrowItemModel itemModelWithTitle:@"检查更新" icon:@"MoreUpdate"];
-    //定义坚持更新的block
+    //定义点击更新的block
     [moreUpdateItem setOptionBlock:^{
         //显示蒙板
         [MBProgressHUD showMessage:@"检查版本信息..."];
